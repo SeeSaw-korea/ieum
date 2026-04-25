@@ -10,16 +10,19 @@
   gtag('js', new Date());
 
   gtag('config', 'G-255F2WVWER');
-</script>
-    <script>
-  // 주소창의 # 뒷부분이 바뀔 때마다 실행됩니다.
+  // 사용자가 메뉴를 클릭해서 # 뒤의 주소가 바뀔 때마다 실행됩니다.
   window.addEventListener('hashchange', function() {
-    gtag('event', 'page_view', {
-      page_path: location.pathname + location.hash,
-      page_title: document.title
+    // 본인의 GA4 측정 ID를 입력하세요 (예: G-XXXXXXXXXX)
+    var gaId = 'G-255F2WVWER'; 
+
+    gtag('config', gaId, {
+      'page_path': location.pathname + location.hash, // /seesaw/#/content/p1 형태로 전송
+      'page_title': document.title
     });
+    console.log('페이지 뷰 전송 완료: ' + location.hash); // 확인용 로그
   });
 </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEE-SAW - 청년 참여 구조</title>
