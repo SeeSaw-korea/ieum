@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 interface Option { label: string; text: string; type: 1 | 2 | 3; }
 interface Question { text: string; scene: string; options: Option[]; }
 interface ResultData {
   emoji: string; badge: string; title: string; body: string;
-  detail: string; msg: string; tags: string[]; meters: Re1cord<string, number>;
+  detail: string; msg: string; tags: string[]; meters: Record<string, number>;
 }
 
 const questions: Question[] = [
@@ -136,24 +136,6 @@ const MID = '#6B4A20';
 
 const TypeTest: React.FC = () => {
   const navigate = useNavigate();
-  const [, setSearchParams] = useSearchParams();
-
-  // URL sync for GA4 drop-off tracking
-  useEffect(() => {
-    if (screen === 'intro') {
-      setSearchParams({}, { replace: true });
-    } else if (screen === 'quiz') {
-      setSearchParams({ q: String(currentQ + 1) }, { replace: true });
-    } else if (screen === 'landing') {
-      setSearchParams({ step: 'landing' }, { replace: true });
-    }
-  }, [screen, currentQ]);
-
-  useEffect(() => {
-    if (showResult) {
-      setSearchParams({ step: 'result' }, { replace: true });
-    }
-  }, [showResult]);
   const [screen, setScreen] = useState<'intro' | 'quiz' | 'landing'>('intro');
   const [showResult, setShowResult] = useState(false);
   const [currentQ, setCurrentQ] = useState(0);
@@ -168,6 +150,25 @@ const TypeTest: React.FC = () => {
   const [feedItems, setFeedItems] = useState(feedPool.slice(0, 3));
   const [feedIdx, setFeedIdx] = useState(3);
   const [confetti, setConfetti] = useState<{ id: number; left: number; color: string; dur: number; delay: number; round: boolean }[]>([]);
+
+  // URL sync for GA4 drop-off tracking
+  useEffect(() => {
+    const basePath = window.location.hash.split('?')[0];
+    if (screen === 'intro') {
+      window.history.replaceState(null, '', window.location.pathname + basePath);
+    } else if (screen === 'quiz') {
+      window.history.replaceState(null, '', window.location.pathname + basePath + '?q=' + (currentQ + 1));
+    } else if (screen === 'landing') {
+      window.history.replaceState(null, '', window.location.pathname + basePath + '?step=landing');
+    }
+  }, [screen, currentQ]);
+
+  useEffect(() => {
+    if (showResult) {
+      const basePath = window.location.hash.split('?')[0];
+      window.history.replaceState(null, '', window.location.pathname + basePath + '?step=result');
+    }
+  }, [showResult]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
