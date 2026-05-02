@@ -5,7 +5,8 @@ export enum Category {
   INSIGHTS = '인사이트',
   CAMPAIGNS = '캠페인',
   INTERVIEWS = '인터뷰',
-  ESSAYS = '에세이/칼럼'
+  ESSAYS = '에세이/칼럼',
+  TYPE_TEST = '유형테스트'
 }
 
 export interface UserProfile {

@@ -210,3 +210,18 @@ export class ContentModel {
     };
   }
 }
+export class TypeTestModel {
+  static async saveSubmission(data: {
+    name: string;
+    phone: string;
+    region: string;
+    status?: string;
+    worry?: string;
+    result?: string;
+  }): Promise<void> {
+    await executeQuery(
+      'INSERT INTO type_test_submissions (name, phone, region, status, worry, result) VALUES (?, ?, ?, ?, ?, ?)',
+      [data.name, data.phone, data.region, data.status || null, data.worry || null, data.result || null]
+    );
+  }
+}

@@ -3,7 +3,7 @@ import { createServer as createViteServer } from "vite";
 import path from "path";
 import { fileURLToPath } from "url";
 import dotenv from 'dotenv';
-import { ContentModel } from "./lib/models.js";
+import { ContentModel, TypeTestModel } from "./lib/models.js";
 import { Category } from "./types.js";
 
 // Load environment variables
@@ -80,6 +80,23 @@ async function startServer() {
     } catch (error) {
       console.error("Error fetching content:", error);
       res.status(500).json({ error: "Failed to fetch content" });
+    }
+  });
+
+
+  app.post("/api/type-test", async (req, res) => {
+    console.log("API call: POST /api/type-test");
+    try {
+      const { name, phone, region, status, worry, result } = req.body;
+      if (!name || !phone || !region) {
+        res.status(400).json({ error: "Required fields missing" });
+        return;
+      }
+      await TypeTestModel.saveSubmission({ name, phone, region, status, worry, result });
+      res.json({ success: true });
+    } catch (error) {
+      console.error("Error saving type test submission:", error);
+      res.status(500).json({ error: "Failed to save submission" });
     }
   });
 

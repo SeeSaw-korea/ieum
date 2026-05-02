@@ -16,6 +16,7 @@ import ProjectLetter1 from './components/ProjectLetter1';
 import ProjectLetter2 from './components/ProjectLetter2';
 import ProjectTest from './components/ProjectTest';
 import ProjectRandomBox from './components/ProjectRandomBox';
+import TypeTest from './components/TypeTest';
 
 const App: React.FC = () => {
   const navigate = useNavigate();
@@ -74,6 +75,7 @@ const App: React.FC = () => {
     location.pathname.startsWith('/content') || 
     location.pathname.startsWith('/form-') ||
     location.pathname === '/random-box' ||
+    location.pathname === '/type-test' ||
     location.pathname === '/login' || 
     location.pathname === '/signup';
 
@@ -131,6 +133,7 @@ const App: React.FC = () => {
           <Route path="/form-independence" element={<FormIndependence />} />
           <Route path="/form-soldier" element={<FormSoldier />} />
           <Route path="/random-box" element={<ProjectRandomBox />} />
+          <Route path="/type-test" element={<TypeTest />} />
           <Route path="/more" element={<MorePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
