@@ -213,6 +213,9 @@ const TypeTest: React.FC = () => {
     if (!formData.name) { alert('이름을 입력해주세요.'); return; }
     if (!formData.phone) { alert('연락처를 입력해주세요.'); return; }
     if (!formData.region) { alert('거주 지역을 선택해주세요.'); return; }
+    if (!formData.regionDetail) { alert('거주지 상세 주소를 입력해주세요.'); return; }
+    if (!formData.status) { alert('신분을 선택해주세요.'); return; }
+    if (!formData.worry) { alert('정부에 한마디를 입력해주세요.'); return; }
     const resultLabel = currentResult ? `${currentResult.badge} ${currentResult.title}` : '';
     try {
       await supabase.from('type_test_submissions').insert({
@@ -220,8 +223,8 @@ const TypeTest: React.FC = () => {
         phone: formData.phone,
         region: formData.region,
         region_detail: formData.regionDetail || null,
-        status: formData.status || null,
-        worry: formData.worry || null,
+        status: formData.status,
+        worry: formData.worry,
         result: resultLabel,
       });
     } catch (_) { /* fail silently */ }
@@ -538,25 +541,25 @@ const TypeTest: React.FC = () => {
                     placeholder="예) 서울 관악구 신림동, 경기 수원시 등"
                     style={{ width: '100%', border: `2px solid ${WARM}`, borderRadius: 12, padding: '13px 15px', fontSize: 14, color: '#2C2C2C', background: '#FFFAF3', outline: 'none', boxSizing: 'border-box', fontFamily: "'Noto Sans KR',sans-serif", marginTop: 8 }}
                   />
-                  <div style={{ fontSize: 11, color: '#aaa', marginTop: 4, paddingLeft: 2 }}>구/동까지 적어주시면 더 좋아요 (선택)</div>
+                  <div style={{ fontSize: 11, color: '#aaa', marginTop: 4, paddingLeft: 2 }}>구/동까지 구체적으로 적어주세요</div>
                 </div>
                 <div style={{ marginBottom: 14 }}>
-                  <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: MID, marginBottom: 6 }}>신분</label>
+                  <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: MID, marginBottom: 6 }}>신분 <span style={{ color: AMBER }}>*</span></label>
                   <select value={formData.status} onChange={e => setFormData(prev => ({ ...prev, status: e.target.value }))}
                     style={{ width: '100%', border: `2px solid ${WARM}`, borderRadius: 12, padding: '13px 15px', fontSize: 14, color: formData.status ? '#2C2C2C' : '#888', background: '#FFFAF3', outline: 'none', boxSizing: 'border-box', cursor: 'pointer', fontFamily: "'Noto Sans KR',sans-serif", appearance: 'none' as const }}>
-                    <option value="">현재 신분을 선택해주세요 (선택)</option>
+                    <option value="">현재 신분을 선택해주세요</option>
                     {['대학생', '대학원생', '취업준비생', '사회초년생', '프리랜서', '기타'].map(s => <option key={s}>{s}</option>)}
                   </select>
                 </div>
                 <div style={{ marginBottom: 14 }}>
-                  <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: MID, marginBottom: 6 }}>정부에 한마디</label>
+                  <label style={{ display: 'block', fontSize: 13, fontWeight: 600, color: MID, marginBottom: 6 }}>정부에 한마디 <span style={{ color: AMBER }}>*</span></label>
                   <textarea value={formData.worry} onChange={e => setFormData(prev => ({ ...prev, worry: e.target.value }))} placeholder="예) 밥값 좀 내려주세요! / 서울 원세 너무 비싸요!"
                     style={{ width: '100%', border: `2px solid ${WARM}`, borderRadius: 12, padding: '13px 15px', fontSize: 14, color: '#2C2C2C', background: '#FFFAF3', resize: 'none', height: 80, outline: 'none', boxSizing: 'border-box', fontFamily: "'Noto Sans KR',sans-serif" }} />
                 </div>
                 <button onClick={submitForm} style={{ width: '100%', background: `linear-gradient(135deg,${AMBER},${GOLD})`, color: 'white', border: 'none', borderRadius: 18, padding: '20px 24px', fontSize: 17, fontWeight: 700, cursor: 'pointer', boxShadow: `0 8px 28px rgba(200,148,62,.45)`, transition: 'all .2s', fontFamily: "'Noto Sans KR',sans-serif" }}>
                   ✍️ 서명하고 결과 보기
                 </button>
-                <p style={{ fontSize: 11, color: '#888', textAlign: 'center', lineHeight: 1.6, marginTop: 10 }}>🔒 입력하신 정보는 정책 제안서 전달 및 씨소 활동 안내 목적으로만 사용돼요</p>
+                <p style={{ fontSize: 11, color: '#888', textAlign: 'center', lineHeight: 1.6, marginTop: 10 }}>🔒 입력하신 정보는 정책 제안서 전달 및 시소 활동 안내 목적으로만 사용돼요</p>
               </div>
             ) : (
               <div style={{ background: 'white', borderRadius: 24, padding: '36px 24px', textAlign: 'center', boxShadow: '0 8px 32px rgba(0,0,0,.08)' }}>
