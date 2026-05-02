@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { supabase } from '../lib/supabase';
 
 interface Option { label: string; text: string; type: 1 | 2 | 3; }
 interface Question { text: string; scene: string; options: Option[]; }
@@ -212,11 +213,15 @@ const TypeTest: React.FC = () => {
     if (!formData.name) { alert('이름을 입력해주세요.'); return; }
     if (!formData.phone) { alert('연락처를 입력해주세요.'); return; }
     if (!formData.region) { alert('거주 지역을 선택해주세요.'); return; }
+    const resultLabel = currentResult ? `${currentResult.badge} ${currentResult.title}` : '';
     try {
-      await fetch('/api/type-test', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, result: currentResult ? `${currentResult.badge} ${currentResult.title}` : '' }),
+      await supabase.from('type_test_submissions').insert({
+        name: formData.name,
+        phone: formData.phone,
+        region: formData.region,
+        status: formData.status || null,
+        worry: formData.worry || null,
+        result: resultLabel,
       });
     } catch (_) { /* fail silently */ }
     setSignCount(prev => prev + 1);
