@@ -8,20 +8,20 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-255F2WVWER', { send_page_view: true });
-</script>
-<!-- GitHub Pages SPA: URL 경로 복원 -->
-<script>
-  (function(l) {
-    if (l.search[1] === '/') {
-      var decoded = l.search.slice(1).split('&').map(function(s) {
-        return s.replace(/~and~/g, '&');
-      }).join('?');
-      window.history.replaceState(null, null,
-        l.pathname.slice(0, -1) + decoded + l.hash
-      );
-    }
-  }(window.location));
+
+  // 초기 페이지뷰: hash에서 # 제거해 깔끔한 경로 전송 (예: /type-test?q=1)
+  var initialPath = location.hash ? location.hash.slice(1) : '/';
+  gtag('config', 'G-255F2WVWER', { page_path: initialPath });
+
+  // hash 변경마다 page_view 전송 (# 제거된 경로로)
+  window.addEventListener('hashchange', function() {
+    var cleanPath = location.hash ? location.hash.slice(1) : '/';
+    gtag('event', 'page_view', {
+      page_location: location.href,
+      page_path: cleanPath,
+      page_title: document.title
+    });
+  });
 </script>
 
     <meta charset="UTF-8">
