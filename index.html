@@ -2,25 +2,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-255F2WVWER"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'G-255F2WVWER');
-  // 사용자가 메뉴를 클릭해서 # 뒤의 주소가 바뀔 때마다 실행됩니다.
-  window.addEventListener('hashchange', function() {
-    // 본인의 GA4 측정 ID를 입력하세요 (예: G-XXXXXXXXXX)
-    var gaId = 'G-255F2WVWER'; 
-
-    gtag('config', gaId, {
-      'page_path': location.pathname + location.hash, // /seesaw/#/content/p1 형태로 전송
-      'page_title': document.title
-    });
-    console.log('페이지 뷰 전송 완료: ' + location.hash); // 확인용 로그
-  });
+  gtag('config', 'G-255F2WVWER', { send_page_view: true });
+</script>
+<!-- GitHub Pages SPA: URL 경로 복원 -->
+<script>
+  (function(l) {
+    if (l.search[1] === '/') {
+      var decoded = l.search.slice(1).split('&').map(function(s) {
+        return s.replace(/~and~/g, '&');
+      }).join('?');
+      window.history.replaceState(null, null,
+        l.pathname.slice(0, -1) + decoded + l.hash
+      );
+    }
+  }(window.location));
 </script>
 
     <meta charset="UTF-8">
