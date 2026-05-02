@@ -17,6 +17,7 @@ import ProjectLetter2 from './components/ProjectLetter2';
 import ProjectTest from './components/ProjectTest';
 import ProjectRandomBox from './components/ProjectRandomBox';
 import TypeTest from './components/TypeTest';
+import ProjectMinwon from './components/ProjectMinwon';
 
 const App: React.FC = () => {
   const navigate = useNavigate();
@@ -76,6 +77,7 @@ const App: React.FC = () => {
     location.pathname.startsWith('/form-') ||
     location.pathname === '/random-box' ||
     location.pathname === '/type-test' ||
+    location.pathname.startsWith('/project-minwon') ||
     location.pathname === '/login' || 
     location.pathname === '/signup';
 
@@ -134,6 +136,7 @@ const App: React.FC = () => {
           <Route path="/form-soldier" element={<FormSoldier />} />
           <Route path="/random-box" element={<ProjectRandomBox />} />
           <Route path="/type-test" element={<TypeTest />} />
+          <Route path="/project-minwon" element={<ProjectMinwonWrapper />} />
           <Route path="/more" element={<MorePage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
@@ -206,6 +209,7 @@ const ContentDetailWrapper: React.FC<{ toggleWishlist: (id: string) => void, wis
   if (id === 's_proj1') return <ProjectLetter1 onBack={() => navigate(-1)} />;
   if (id === 's_proj2') return <ProjectLetter2 onBack={() => navigate(-1)} />;
   if (id === 's_proj3') return <ProjectTest onBack={() => navigate(-1)} />;
+  if (id === 's_proj4') return <ProjectMinwon onBack={() => navigate(-1)} />;
 
   return (
     <ContentDetail 
@@ -215,6 +219,11 @@ const ContentDetailWrapper: React.FC<{ toggleWishlist: (id: string) => void, wis
       isWishlisted={wishlist.includes(item.id)}
     />
   );
+};
+
+const ProjectMinwonWrapper: React.FC = () => {
+  const navigate = useNavigate();
+  return <ProjectMinwon onBack={() => navigate(-1)} />;
 };
 
 export default App;

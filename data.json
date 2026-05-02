@@ -38,6 +38,41 @@
   ],
   "MOCK_CONTENTS": [
     {
+      "id": "s_proj4",
+      "title": "[프로젝트] 청년 민원 24 : 우리의 일상은 오답이 아니다",
+      "category": "프로젝트",
+      "description": "청년 1,000명의 민원을 모아 정책 보고서를 발간하고 국회에 전달합니다. 당신의 목소리는 반려될 수 없습니다.",
+      "imageUrl": "/image/minwon-project.jpg",
+      "deadline": "~ 1,000건 달성 시",
+      "tag": "청년민원",
+      "detailedSections": [
+        {
+          "type": "quote",
+          "subtitle": "우리의 일상은 오답이 아니다",
+          "body": "고물가, 취업난, 주거 불안으로 인해 청년들이 사회적 관계를 포기하는 현상은 개인의 문제가 아닌 사회의 설계 결함입니다.",
+          "iconClass": "fa-solid fa-quote-left text-seeSawAmber"
+        },
+        {
+          "type": "highlight",
+          "subtitle": "📋 청년 민원 1,000건 수집 캠페인",
+          "body": "청년들의 생생한 고통 사례(민원) 1,000건을 수집하여 '청년 고립 실태 고발서'를 발간하고 정책 제안과 함께 국회에 전달합니다.",
+          "iconClass": "fa-solid fa-file-lines text-seeSawAmber"
+        },
+        {
+          "type": "checklist",
+          "subtitle": "■ 캠페인 목표",
+          "body": "세 가지 핵심 목표를 향해 나아갑니다.",
+          "iconClass": "fa-solid fa-bullseye text-red-500",
+          "extraData": [
+            "청년 생생한 민원 1,000건 수집",
+            "'청년 고립 실태 고발서' 발간 및 정책 제안",
+            "심층 인터뷰 대상자(진성 DB) 확보"
+          ]
+        }
+      ],
+      "externalLink": ""
+    },
+    {
       "id": "p1",
       "title": "[프로젝트] \"함께해야 가능한 연결\" 아이디어 공모전 2회",
       "category": "프로젝트",
