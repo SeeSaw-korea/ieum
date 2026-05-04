@@ -1457,11 +1457,12 @@ section {
 }
 .reward-card.premium .by { color: rgba(199, 125, 92, 0.9); }
 
-/* Premium back face */
+/* Premium back face — 밝은 종이톤으로 다른 카드들과 통일성 */
 .reward-card .face.back.premium-back {
-  background: linear-gradient(155deg, #1f1812 0%, #0c0a08 100%);
-  color: var(--bg);
+  background: var(--bg);
+  color: var(--ink);
   padding: 0;
+  border: 1px solid var(--line);
 }
 .premium-back-inner {
   display: flex;
@@ -1470,7 +1471,7 @@ section {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 22px 18px;
+  padding: 24px 18px;
   text-align: center;
   gap: 14px;
 }
@@ -1478,21 +1479,25 @@ section {
   font-family: 'DM Mono', monospace;
   font-size: 9px;
   letter-spacing: 0.3em;
-  color: #C77D5C;
+  color: var(--accent);
+  padding: 4px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
 }
 .pb-quote {
   font-family: 'Nanum Myeongjo', serif;
   font-weight: 800;
-  font-size: 20px;
-  line-height: 1.35;
+  font-size: 19px;
+  line-height: 1.4;
   letter-spacing: -0.02em;
   word-break: keep-all;
+  color: var(--ink);
 }
 .pb-desc {
   font-family: 'Gowun Batang', serif;
   font-size: 12px;
-  color: rgba(240, 232, 216, 0.7);
-  line-height: 1.6;
+  color: var(--sub);
+  line-height: 1.65;
   word-break: keep-all;
 }
 @media (max-width: 720px) {
@@ -1536,6 +1541,192 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--sub);
+}
+.new-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #ffffff;
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.model-sub {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+/* Winner check button */
+.winner-check-wrap {
+  margin-top: 28px;
+  text-align: center;
+}
+.winner-check-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  padding: 14px 28px;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  border-radius: 999px;
+  transition: all 0.2s;
+}
+.winner-check-btn:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.winner-check-btn::before {
+  content: '🎁';
+  font-size: 16px;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 10, 8, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+.modal-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  max-width: 420px;
+  width: calc(100% - 32px);
+  position: relative;
+  transform: scale(0.95);
+  transition: transform 0.25s;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+}
+.modal-overlay.show .modal { transform: scale(1); }
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: var(--sub);
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.15s;
+}
+.modal-close:hover { background: #f0eadb; color: var(--ink); }
+.modal-title {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.modal-sub {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--sub);
+  margin-bottom: 22px;
+  word-break: keep-all;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal-form input {
+  padding: 13px 15px;
+  border: 1px solid #e3ddc8;
+  border-radius: 8px;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 14px;
+  outline: none;
+  background: #ffffff;
+  color: var(--ink);
+  transition: border-color 0.15s;
+}
+.modal-form input:focus { border-color: var(--accent); }
+.modal-form input::placeholder { color: #b8ad95; }
+.modal-form button {
+  padding: 14px;
+  background: var(--accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+.modal-form button:hover { background: #5a221e; }
+.modal-result {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.6;
+  display: none;
+  word-break: keep-all;
+}
+.modal-result.show { display: block; }
+.modal-result.win {
+  background: #fcf2ee;
+  color: var(--accent);
+  border-left: 3px solid var(--accent);
+}
+.modal-result.lose {
+  background: #f5f1e6;
+  color: var(--sub);
+  border-left: 3px solid var(--line);
+}
+.modal-result.error {
+  background: #fff8e6;
+  color: #8a6d1f;
+  border-left: 3px solid #d4a93f;
+}
+.modal-note {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #efe9d6;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 11px;
+  color: var(--sub);
+  line-height: 1.55;
+  word-break: keep-all;
 }
 
 @media (max-width: 720px) {
@@ -1621,7 +1812,13 @@ form {
   border-radius: 16px;
   padding: 52px 48px;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
 }
+form * { box-sizing: border-box; }
+form input, form select, form textarea { max-width: 100%; }
+.form-wrap { box-sizing: border-box; max-width: 100%; }
 .form-row { margin-bottom: 22px; }
 .form-row label.field-label { font-weight: 600; }
 .form-row {
@@ -1660,6 +1857,9 @@ form {
 .form-row select,
 .form-row textarea {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
   background: #ffffff;
   border: 1px solid #e3ddc8;
   border-radius: 8px;
@@ -1669,6 +1869,7 @@ form {
   color: var(--ink);
   outline: none;
   transition: border-color 0.15s;
+  -webkit-appearance: none;
 }
 .form-row input::placeholder,
 .form-row textarea::placeholder {
@@ -2689,12 +2890,12 @@ footer { padding-bottom: 110px; }
       <div class="reward-card" tabindex="0">
         <div class="flipper">
           <div class="face front">
-            <div class="num">REWARD · 04</div>
-            <div class="name">애플 에어팟<br>(IT 디바이스)</div>
+            <div class="num">REWARD · 04 <span class="new-badge">NEW</span></div>
+            <div class="name">AirPods Pro 3<br><span class="model-sub">2025 최신 모델</span></div>
             <div class="by">— 참여 기업 협찬</div>
           </div>
-          <div class="face back" data-label="애플 에어팟">
-            <img src="이벤트 리워드/에어팟.png" alt="에어팟">
+          <div class="face back" data-label="AirPods Pro 3 · 최신 모델">
+            <img src="이벤트 리워드/에어팟.png" alt="AirPods Pro 3">
           </div>
         </div>
         <span class="flip-hint">↻</span>
@@ -2702,8 +2903,28 @@ footer { padding-bottom: 110px; }
     </div>
 
     <div class="reward-tip">↻ 카드를 눌러 뒤집어보세요</div>
+
+    <div class="winner-check-wrap">
+      <button type="button" class="winner-check-btn" id="openWinnerModal">당첨자 확인하기</button>
+    </div>
   </div>
 </section>
+
+<!-- ============ Winner check modal ============ -->
+<div class="modal-overlay" id="winnerModal">
+  <div class="modal" role="dialog" aria-labelledby="winnerTitle">
+    <button type="button" class="modal-close" id="closeWinnerModal" aria-label="닫기">×</button>
+    <h3 class="modal-title" id="winnerTitle">🎁 당첨자 확인</h3>
+    <p class="modal-sub">신청 시 입력하신 성함과 전화번호로 당첨 여부를 확인할 수 있습니다.</p>
+    <form class="modal-form" id="winnerForm" onsubmit="return checkWinner(event)">
+      <input type="text" name="checkName" placeholder="성함" required>
+      <input type="tel" name="checkPhone" placeholder="전화번호 (예: 010-0000-0000)" required>
+      <button type="submit">확인하기</button>
+    </form>
+    <div class="modal-result" id="winnerResult"></div>
+    <p class="modal-note">⚠️ 당첨자 발표 전에는 결과를 확인하실 수 없습니다.<br>발표일: 2026년 봄 (별도 카카오톡 안내)</p>
+  </div>
+</div>
 
 <!-- ============ FORM ============ -->
 <section class="form-section" id="form">
@@ -3193,6 +3414,49 @@ const rewardIO = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.3 });
 if (rewardSection) rewardIO.observe(rewardSection);
+
+// ===== Winner check modal =====
+const winnerModal = document.getElementById('winnerModal');
+const openWinnerBtn = document.getElementById('openWinnerModal');
+const closeWinnerBtn = document.getElementById('closeWinnerModal');
+const winnerResult = document.getElementById('winnerResult');
+
+function openWinnerModal() {
+  winnerModal.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeWinnerModal() {
+  winnerModal.classList.remove('show');
+  document.body.style.overflow = '';
+  winnerResult.classList.remove('show', 'win', 'lose', 'error');
+  winnerResult.textContent = '';
+  document.getElementById('winnerForm').reset();
+}
+openWinnerBtn?.addEventListener('click', openWinnerModal);
+closeWinnerBtn?.addEventListener('click', closeWinnerModal);
+winnerModal?.addEventListener('click', (e) => {
+  if (e.target === winnerModal) closeWinnerModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && winnerModal?.classList.contains('show')) closeWinnerModal();
+});
+
+function checkWinner(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.checkName.value.trim();
+  const phone = form.checkPhone.value.trim();
+  if (!name || !phone) return false;
+
+  // 발표 전이라 항상 안내 메시지 표시
+  winnerResult.classList.remove('win', 'lose');
+  winnerResult.classList.add('show', 'error');
+  winnerResult.innerHTML =
+    `📅 <strong>${name}</strong>님, 아직 발표 전입니다.<br>` +
+    `당첨자 발표는 <strong>2026년 봄</strong>에 진행되며,<br>` +
+    `발표 후 카카오톡 채널을 통해 개별 안내드립니다.`;
+  return false;
+}
 </script>
 
 </body>
