@@ -71,7 +71,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
     <div className="fixed inset-0 z-50 bg-white flex flex-col p-6 overflow-y-auto">
       <div className="flex justify-between items-center mb-10">
         <div className="h-8 flex items-center">
-          <img src={`${import.meta.env.BASE_URL}ieum-logo.png`} alt="IEUM Logo" className="h-10 w-auto object-contain" />
+          <img src={`${import.meta.env.BASE_URL}ieum-logo.png`} alt="IEUM Logo" className="h-20 w-auto object-contain" />
         </div>
         <div className="text-sm font-medium text-gray-400">단계 {step} / 3</div>
       </div>
