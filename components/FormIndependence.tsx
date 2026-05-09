@@ -16,8 +16,8 @@ const FormIndependence: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-seeSawCream flex flex-col animate-fadeIn pb-20">
-      <header className="sticky top-0 bg-seeSawCream px-4 py-3 flex items-center shadow-sm">
+    <div className="min-h-screen bg-ieumCream flex flex-col animate-fadeIn pb-20">
+      <header className="sticky top-0 bg-ieumCream px-4 py-3 flex items-center shadow-sm">
         <button onClick={() => navigate(-1)} className="p-2">
           <i className="fa-solid fa-chevron-left text-lg text-gray-700"></i>
         </button>

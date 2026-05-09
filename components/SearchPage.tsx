@@ -59,9 +59,9 @@ const SearchPage: React.FC<SearchPageProps> = ({ onBack, onItemClick }) => {
   };
 
   return (
-    <div className="min-h-screen bg-seeSawCream animate-fadeIn flex flex-col">
+    <div className="min-h-screen bg-ieumCream animate-fadeIn flex flex-col">
       {/* Header */}
-      <header className="px-4 py-3 flex items-center gap-3 sticky top-0 bg-seeSawCream z-50 border-b border-seeSawLight">
+      <header className="px-4 py-3 flex items-center gap-3 sticky top-0 bg-ieumCream z-50 border-b border-ieumLight">
         <button onClick={() => navigate(-1)} className="p-1">
           <i className="fa-solid fa-chevron-left text-xl"></i>
         </button>
@@ -78,7 +78,7 @@ const SearchPage: React.FC<SearchPageProps> = ({ onBack, onItemClick }) => {
               }
             }}
             placeholder="관심 있는 인사이트나 상담을 검색해보세요"
-            className="w-full bg-seeSawLight/50 rounded-lg py-2.5 pl-11 pr-4 text-sm outline-none focus:ring-2 focus:ring-seeSawAmber/20"
+            className="w-full bg-ieumLight/50 rounded-lg py-2.5 pl-11 pr-4 text-sm outline-none focus:ring-2 focus:ring-ieumAmber/20"
             autoFocus
           />
         </form>
@@ -123,7 +123,7 @@ const SearchPage: React.FC<SearchPageProps> = ({ onBack, onItemClick }) => {
                     }}
                   >
                     <span className="w-4 text-sm font-black text-gray-900">{item.rank}</span>
-                    <span className="flex-1 text-sm font-medium text-gray-700 group-hover:text-seeSawAmber transition-colors">{item.term}</span>
+                    <span className="flex-1 text-sm font-medium text-gray-700 group-hover:text-ieumAmber transition-colors">{item.term}</span>
                     <i className={`fa-solid fa-caret-${item.trend} text-[10px] ${item.trend === 'up' ? 'text-red-400' : 'text-blue-300'}`}></i>
                   </div>
                 ))}
@@ -133,7 +133,7 @@ const SearchPage: React.FC<SearchPageProps> = ({ onBack, onItemClick }) => {
         ) : (
           <div className="animate-fadeIn px-5 py-6">
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-base font-bold">검색 결과 <span className="text-seeSawAmber">{searchResults.length}</span></h2>
+              <h2 className="text-base font-bold">검색 결과 <span className="text-ieumAmber">{searchResults.length}</span></h2>
               <div className="flex items-center gap-1 text-xs text-gray-400 font-medium">
                 추천순 <i className="fa-solid fa-chevron-down text-[8px]"></i>
               </div>
@@ -149,7 +149,7 @@ const SearchPage: React.FC<SearchPageProps> = ({ onBack, onItemClick }) => {
                   >
                     <div className="relative aspect-[3/4] rounded-xl overflow-hidden mb-3">
                       <img src={getImageUrl(item.imageUrl)} alt={item.title} className="w-full h-full object-cover transition-transform group-hover:scale-105" referrerPolicy="no-referrer" />
-                      <div className="absolute bottom-2 left-2 bg-seeSawAmber text-white text-[9px] font-bold px-1.5 py-0.5 rounded">
+                      <div className="absolute bottom-2 left-2 bg-ieumAmber text-white text-[9px] font-bold px-1.5 py-0.5 rounded">
                         오늘공고
                       </div>
                     </div>

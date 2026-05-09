@@ -22,7 +22,7 @@ async function run() {
       type: 'quote',
       subtitle: '희생을 기억하는 것이 우리의 출발점입니다.',
       body: '독립운동가 후손들을 기억하고, 경제적·사회적 지원을 모색하는 참여형 아카이브 캠페인입니다. 그들의 이야기를 발굴하고, 더 많은 사람들과 함께 나누는 것이 이 프로젝트의 목적입니다.',
-      iconClass: 'fa-solid fa-quote-left text-seeSawAmber'
+      iconClass: 'fa-solid fa-quote-left text-ieumAmber'
     },
     {
       type: 'checklist',
@@ -42,7 +42,7 @@ async function run() {
       iconClass: 'fa-solid fa-circle-question text-blue-500',
       faqData: [
         { question: '누구나 참여할 수 있었나요?', answer: '네, 독립운동가 후손에 관심 있는 누구나 참여 가능했습니다. 스토리 제보, 콘텐츠 공유 등 다양한 방식으로 함께했습니다.' },
-        { question: '수집된 아카이브는 어디서 확인할 수 있나요?', answer: '시소 공식 홈페이지와 SNS 채널을 통해 아카이브 콘텐츠를 확인하실 수 있습니다.' }
+        { question: '수집된 아카이브는 어디서 확인할 수 있나요?', answer: '이음 공식 홈페이지와 SNS 채널을 통해 아카이브 콘텐츠를 확인하실 수 있습니다.' }
       ]
     }
   ];

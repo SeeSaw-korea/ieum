@@ -71,7 +71,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
     <div className="fixed inset-0 z-50 bg-white flex flex-col p-6 overflow-y-auto">
       <div className="flex justify-between items-center mb-10">
         <div className="h-8 flex items-center">
-          <img src={`${import.meta.env.BASE_URL}seesaw-logo.png`} alt="SEE-SAW Logo" className="h-10 w-auto object-contain" />
+          <img src={`${import.meta.env.BASE_URL}ieum-logo.png`} alt="IEUM Logo" className="h-10 w-auto object-contain" />
         </div>
         <div className="text-sm font-medium text-gray-400">단계 {step} / 3</div>
       </div>
@@ -88,7 +88,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                 type="number" 
                 value={age} 
                 onChange={(e) => setAge(Number(e.target.value))}
-                className="w-full p-4 bg-seeSawLight/40 rounded-xl focus:ring-2 focus:ring-seeSawAmber outline-none"
+                className="w-full p-4 bg-ieumLight/40 rounded-xl focus:ring-2 focus:ring-ieumAmber outline-none"
               />
             </div>
             <div>
@@ -96,7 +96,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
               <select 
                 value={region} 
                 onChange={(e) => setRegion(e.target.value)}
-                className="w-full p-4 bg-seeSawLight/40 rounded-xl focus:ring-2 focus:ring-seeSawAmber outline-none appearance-none"
+                className="w-full p-4 bg-ieumLight/40 rounded-xl focus:ring-2 focus:ring-ieumAmber outline-none appearance-none"
               >
                 {regions.map(r => <option key={r} value={r}>{r}</option>)}
               </select>
@@ -106,7 +106,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
               <select 
                 value={mbti} 
                 onChange={(e) => setMbti(e.target.value)}
-                className="w-full p-4 bg-seeSawLight/40 rounded-xl focus:ring-2 focus:ring-seeSawAmber outline-none appearance-none"
+                className="w-full p-4 bg-ieumLight/40 rounded-xl focus:ring-2 focus:ring-ieumAmber outline-none appearance-none"
               >
                 <option value="">선택 안함</option>
                 {mbtiTypes.map(m => <option key={m} value={m}>{m}</option>)}
@@ -128,8 +128,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
                 onClick={() => toggleInterest(cat)}
                 className={`p-4 rounded-xl text-sm font-bold border-2 transition-all ${
                   interests.includes(cat) 
-                    ? 'border-seeSawAmber bg-seeSawAmber text-white shadow-lg' 
-                    : 'border-seeSawLight bg-seeSawCream text-seeSawMuted'
+                    ? 'border-ieumAmber bg-ieumAmber text-white shadow-lg' 
+                    : 'border-ieumLight bg-ieumCream text-ieumMuted'
                 }`}
               >
                 {cat}
@@ -175,7 +175,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
       <button
         onClick={handleNext}
         disabled={isAnalyzing}
-        className="w-full py-4 bg-seeSawAmber text-white rounded-xl font-bold shadow-lg shadow-seeSawAmber/30 mt-6 flex items-center justify-center"
+        className="w-full py-4 bg-ieumAmber text-white rounded-xl font-bold shadow-lg shadow-ieumAmber/30 mt-6 flex items-center justify-center"
       >
         {isAnalyzing ? (
           <>

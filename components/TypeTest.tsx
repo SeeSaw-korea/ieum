@@ -127,13 +127,13 @@ const feedPool = [
   { region: '광주 · 자취 3년차', typeNum: 3, result: '보조 배터리', emoji: '😴', bg: '#FFF8ED' },
 ];
 
-const AMBER = '#C8943E';
-const GOLD = '#D4A853';
-const CREAM = '#FFFEF7';
-const LIGHT_AMBER = '#FFF3DC';
-const WARM = '#FFEFD0';
-const DARK = '#3A2210';
-const MID = '#6B4A20';
+const AMBER = '#A8834C';
+const GOLD = '#B8935C';
+const CREAM = '#F9F7F2';
+const LIGHT_AMBER = '#F2EFE8';
+const WARM = '#E8E2D2';
+const DARK = '#2C1A08';
+const MID = '#5A4A38';
 
 const TypeTest: React.FC = () => {
   const navigate = useNavigate();
@@ -423,7 +423,7 @@ const TypeTest: React.FC = () => {
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '20px 0 6px', color: '#888', fontSize: 12, fontWeight: 600 }}>
-              <div style={{ flex: 1, height: 1, background: WARM }} />📊 2026년 자취생 현실<div style={{ flex: 1, height: 1, background: WARM }} />
+              <div style={{ flex: 1, height: 1, background: WARM }} />📊 2026 청년들의 현실<div style={{ flex: 1, height: 1, background: WARM }} />
             </div>
 
             {[
@@ -472,15 +472,29 @@ const TypeTest: React.FC = () => {
               <p style={{ fontSize: 12, color: 'rgba(255,255,255,.7)' }}>목표 <strong style={{ color: GOLD }}>10,000명</strong> · 달성 시 정부 정책 제안서 공식 전달</p>
             </div>
 
-            {[
-              { who: '서울 · 24세', msg: '"밥값 좀 내려주세요... 학식은 7천원이라 부담이라요"' },
-              { who: '경기 · 22세', msg: '"서울 75만원 내고 나면 아무것도 못해요"' },
-              { who: '부산 · 26세', msg: '"친구 만드는 게 사치가 됐어요. 바뀌면 좋겠어요"' },
-            ].map((m, i) => (
-              <div key={i} style={{ background: '#FFFAF3', borderRadius: 12, padding: '10px 14px', fontSize: 12, color: MID, borderLeft: `3px solid ${GOLD}`, lineHeight: 1.5, marginBottom: 8 }}>
-                <span style={{ fontSize: 10, color: AMBER, fontWeight: 700, display: 'block', marginBottom: 2 }}>{m.who}</span>{m.msg}
-              </div>
-            ))}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 8 }}>
+              {[
+                { who: 'Case #0912, 서울 24세', msg: '학식 7천 원이 무서워서 친구를 피하게 돼요. 동기들이 맛집 가자고 할 때마다 거짓말하고 편의점으로 향하는 제 자신이 너무 싫어요.', time: '2026.05.08 09:12' },
+                { who: 'Case #0913, 경기 22세', msg: '월세 75만 원 내고 나면 생활비가 없어서 하루 한 끼는 무조건 라면으로 때웁니다. 내일이 오는 게 두려워요.', time: '2026.05.08 10:45' },
+                { who: 'Case #0914, 부산 26세', msg: '취업 준비 기간이 길어지면서 부모님께 손 벌리는 것도 한계네요. 친구 만나는 게 사치가 됐어요.', time: '2026.05.08 14:20' },
+              ].map((m, i) => (
+                <div key={i} style={{ background: 'white', borderRadius: 6, padding: '16px', border: `1px solid ${WARM}`, boxShadow: '0 2px 4px rgba(0,0,0,.02)', position: 'relative' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: `1px dashed ${WARM}`, paddingBottom: 8, marginBottom: 12 }}>
+                    <div style={{ fontSize: 10, color: '#888', fontFamily: 'monospace' }}>{m.time}</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                      <span style={{ width: 12, height: 12, display: 'inline-block', background: '#2B6CB0', borderRadius: '50%', color: 'white', fontSize: 8, textAlign: 'center', lineHeight: '12px' }}>✓</span>
+                      <span style={{ fontSize: 10, fontWeight: 700, color: '#2B6CB0', letterSpacing: 0.5 }}>검증 완료</span>
+                    </div>
+                  </div>
+                  <p style={{ fontSize: 14, color: DARK, lineHeight: 1.6, fontWeight: 500, marginBottom: 16 }}>
+                    "{m.msg}"
+                  </p>
+                  <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, color: AMBER, background: LIGHT_AMBER, padding: '4px 8px', borderRadius: 4 }}>{m.who}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '20px 0 6px', color: '#888', fontSize: 12, fontWeight: 600 }}>
               <div style={{ flex: 1, height: 1, background: WARM }} />🎁 서명하면 받을 수 있어요<div style={{ flex: 1, height: 1, background: WARM }} />
@@ -559,7 +573,13 @@ const TypeTest: React.FC = () => {
                 <button onClick={submitForm} style={{ width: '100%', background: `linear-gradient(135deg,${AMBER},${GOLD})`, color: 'white', border: 'none', borderRadius: 18, padding: '20px 24px', fontSize: 17, fontWeight: 700, cursor: 'pointer', boxShadow: `0 8px 28px rgba(200,148,62,.45)`, transition: 'all .2s', fontFamily: "'Noto Sans KR',sans-serif" }}>
                   ✍️ 서명하고 결과 보기
                 </button>
-                <p style={{ fontSize: 11, color: '#888', textAlign: 'center', lineHeight: 1.6, marginTop: 10 }}>🔒 입력하신 정보는 정책 제안서 전달 및 시소 활동 안내 목적으로만 사용돼요</p>
+                <div style={{ marginTop: 16, background: '#F9F7F2', padding: '16px', borderRadius: 8, border: `1px solid ${AMBER}`, textAlign: 'center' }}>
+                  <div style={{ color: '#D32F2F', fontSize: 12, fontWeight: 900, marginBottom: 4 }}>[개인정보 보호 안내]</div>
+                  <p style={{ fontSize: 11, color: DARK, lineHeight: 1.5, margin: 0 }}>
+                    입력하신 정보는 <strong style={{ color: '#333' }}>개인정보 보호법 제15조</strong>에 의거하여<br />
+                    정책 제안 목적 종료 시 <strong style={{ color: '#333' }}>즉시 파기됩니다.</strong>
+                  </p>
+                </div>
               </div>
             ) : (
               <div style={{ background: 'white', borderRadius: 24, padding: '36px 24px', textAlign: 'center', boxShadow: '0 8px 32px rgba(0,0,0,.08)' }}>

@@ -21,9 +21,9 @@ const CategoryList: React.FC = () => {
           <button
             key={cat}
             onClick={() => handleClick(cat)}
-            className="h-28 bg-seeSawCream rounded-2xl flex flex-col items-center justify-center gap-3 hover:bg-seeSawAmber/8 transition-colors border border-transparent hover:border-seeSawAmber/20 shadow-sm"
+            className="h-28 bg-ieumCream rounded-2xl flex flex-col items-center justify-center gap-3 hover:bg-ieumAmber/8 transition-colors border border-transparent hover:border-ieumAmber/20 shadow-sm"
           >
-            <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-xl text-seeSawAmber">
+            <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-xl text-ieumAmber">
               {cat === Category.PROJECTS && <i className="fa-solid fa-puzzle-piece"></i>}
               {cat === Category.SEMINARS && <i className="fa-solid fa-users-rays"></i>}
               {cat === Category.INSIGHTS && <i className="fa-solid fa-lightbulb"></i>}

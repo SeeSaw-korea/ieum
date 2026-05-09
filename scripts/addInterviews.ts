@@ -53,7 +53,7 @@ async function run() {
     await ins('i4', 'quote',
       '"하나의 공간이 작은 용기를 키우는 토양이 될 수 있어요."',
       '📃 Editor\'s Note\n\n많은 창업자들이 공유 오피스를 단순히 비용 절감을 위한 선택이라고 말한다. 그러나 곽OO은 조금 다른 시선을 가지고 있다. \'같은 공간에 머문다는 것\'이 사람의 태도를 바꾸고, 혼자였다면 하지 못했을 시도를 가능하게 한다고 그는 말한다. 오늘, 그가 기획해온 공간의 풍경과, 그곳에서 자라는 작은 변화들을 들여다본다.',
-      'fa-solid fa-quote-left text-seeSawAmber', 2);
+      'fa-solid fa-quote-left text-ieumAmber', 2);
     await ins('i4', 'faq', '🎤 Interview', '', 'fa-solid fa-microphone text-indigo-400', 3, undefined, [
       {
         question: 'Q1. 공유 오피스를 기획하게 된 계기가 무엇이었나요?',
@@ -88,7 +88,7 @@ async function run() {
       '공간은 언제나 \'물리\'가 아니라 \'관계\'였다.',
       '무언가를 시작할 때, 우리는 종종 \'자신감\'이 아니라 \'환경\'을 먼저 잃는다. 불안한 시도, 어색한 시작, 반복되는 실패 속에서 공간은 묵묵히 사람들의 무게를 버텨주고, 가까운 타인의 존재는 우리가 다시 일어설 수 있게 만든다.\n\n곽OO의 공간은 사무실이라는 말보다, 태도의 집합이라는 말이 더 어울린다. 이 인터뷰가, 혼자 시도하고 있는 누군가에게 \'장소\'보다 먼저 \'관계\'가 시작되는 계기가 되길 바란다.',
       'fa-solid fa-circle text-gray-400', 4);
-    await ins('i4', 'checklist', '💬 청년에게 전하는 말', '"공간은 곧 관계의 시작점이에요. 혼자라고 느껴질 때, 그 시작점을 찾아보세요."', 'fa-solid fa-heart text-seeSawAmber', 5, [
+    await ins('i4', 'checklist', '💬 청년에게 전하는 말', '"공간은 곧 관계의 시작점이에요. 혼자라고 느껴질 때, 그 시작점을 찾아보세요."', 'fa-solid fa-heart text-ieumAmber', 5, [
       '환경을 바꿔보세요 — 혼자 버티는 게 어렵다면, 공간을 먼저 바꿔보세요. 공간이 달라지면 생각도 달라지고, 새로운 가능성이 보이기 시작합니다.',
       '주변의 기운을 믿으세요 — 같은 자리에 있는 사람들이 주고받는 작은 기운이 있어요. 완벽히 준비되지 않아도, 그 기운이 당신을 조금 더 담대하게 만들어줄 거예요.',
       '시작은 작아도 괜찮아요 — 오늘 할 수 있는 만큼의 준비와 용기로도 충분해요. 그 작은 시작이 쌓여 결국 당신만의 길이 됩니다.'
@@ -107,7 +107,7 @@ async function run() {
     await ins('i5', 'quote',
       '"문화는 거창한 게 아니라, 작은 공감을 나누는 순간부터 시작돼요."',
       '📃 Editor\'s Note\n\n많은 사람들이 \'문화 기획자\'라 하면 화려한 기획서와 유명한 전시를 떠올린다. 하지만 양OO이 말하는 기획은 더 소박하다. 누군가의 취향이 \'틀리지 않다\'고 확인받는 일, 그 작은 인정이 어떻게 삶을 바꾸는지를 그는 매일 목격한다. 낯섦을 지나 공감에 닿는 그 과정을, 오늘 그에게 들어본다.',
-      'fa-solid fa-quote-left text-seeSawAmber', 2);
+      'fa-solid fa-quote-left text-ieumAmber', 2);
     await ins('i5', 'faq', '🎤 Interview', '', 'fa-solid fa-microphone text-indigo-400', 3, undefined, [
       {
         question: 'Q1. 기획자로 일하게 된 계기가 궁금합니다.',
@@ -147,7 +147,7 @@ async function run() {
     await ins('i6', 'quote',
       '"모든 답을 찾아야 시작할 수 있다고 믿으면, 결국 아무것도 시작할 수 없습니다."',
       '📃 Editor\'s Note\n\n아직 아무것도 보장되지 않은 상태에서 \'내 일\'을 시작하는 사람들은 언제나 같은 두려움에 맞선다. \'내가 해도 될까?\'라는 질문, 그리고 그 질문이 만들어내는 긴 망설임. 이OO 창업가는 그 망설임을 끝까지 붙들지 않기로 선택했다. 그가 말하는 건 완벽보다 중요한 것, 바로 시작 자체의 힘이다.',
-      'fa-solid fa-quote-left text-seeSawAmber', 1);
+      'fa-solid fa-quote-left text-ieumAmber', 1);
     await ins('i6', 'faq', '🎤 Interview', '', 'fa-solid fa-microphone text-indigo-400', 2, undefined, [
       {
         question: 'Q1. 창업을 결심하게 된 계기는 무엇이었나요?',
@@ -178,7 +178,7 @@ async function run() {
       '이OO 창업가는 "늦게 시작하면 완벽해질 것"이라는 환상을 버리라고 말한다.',
       '불완전함에 익숙해지는 것. 그것이 새로운 시대의 창업가가 가져야 할 가장 중요한 태도일지도 모른다.',
       'fa-solid fa-circle text-gray-400', 3);
-    await ins('i6', 'checklist', '💬 청년에게 전하는 말', '"불안해도 시작해보세요. 움직이는 동안에만 배울 수 있어요."', 'fa-solid fa-heart text-seeSawAmber', 4, [
+    await ins('i6', 'checklist', '💬 청년에게 전하는 말', '"불안해도 시작해보세요. 움직이는 동안에만 배울 수 있어요."', 'fa-solid fa-heart text-ieumAmber', 4, [
       '60%의 확신으로도 시작할 수 있어요 — 완벽한 준비를 기다리면 영원히 시작할 수 없어요. 절반의 확신이 생겼다면, 그게 이미 충분한 이유입니다.',
       '실패는 학습이에요 — 틀린 방향을 발견하는 것도 전진입니다. 아무것도 안 하고 멈춰있는 것보다, 시도하고 배우는 쪽이 훨씬 빠릅니다.',
       '문제 정의를 서두르지 마세요 — 무엇을 만들지보다, 누구의 어떤 문제를 해결하는지를 먼저 깊이 생각해보세요. 그 질문이 방향을 만들어요.'

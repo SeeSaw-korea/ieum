@@ -42,7 +42,7 @@ async function run() {
 
     // ── c2: 단체 대신 알려드립니다 (진행중 유지, 섹션 보강) ──
     await clearSections('c2');
-    await insertSection('c2', 'quote', '좋은 활동을 해도 잘 알려지지 않습니다.', '사회 곳곳에서 목소리를 내기 어려운 훌륭한 단체들이 있습니다. 긍정적인 활동을 하고 있음에도 홍보할 여력이 없는 경우가 많죠. 그래서 청년들이 직접 펜을 들었습니다.', 'fa-solid fa-quote-left text-seeSawAmber', 1);
+    await insertSection('c2', 'quote', '좋은 활동을 해도 잘 알려지지 않습니다.', '사회 곳곳에서 목소리를 내기 어려운 훌륭한 단체들이 있습니다. 긍정적인 활동을 하고 있음에도 홍보할 여력이 없는 경우가 많죠. 그래서 청년들이 직접 펜을 들었습니다.', 'fa-solid fa-quote-left text-ieumAmber', 1);
     await insertSection('c2', 'progress', '우리가 조명한 사회의 불빛', '지금까지 숨겨진 보석 같은 단체들을 발굴해 세상에 알렸습니다.', 'fa-solid fa-bullhorn text-orange-500', 2);
     await executeQuery(`INSERT INTO section_progress_data (section_id, current_value, target_value, label) VALUES (LAST_INSERT_ID(), 42, 100, '홍보 지원 단체 발굴 달성률')`);
     await insertSection('c2', 'steps', '어떤 과정으로 홍보가 진행되나요?', '단체 발굴부터 콘텐츠 기획, SNS 배포까지 전 과정을 청년의 시각으로 재탄생시킵니다.', 'fa-solid fa-pen-nib text-indigo-500', 3, ['도움이 필요한 소규모 사회단체 발굴 및 활동 취재', '청년 눈높이에 맞춘 카드뉴스 및 숏폼 기획', 'SNS 릴레이 배포 및 응원 해시태그 대확산']);
@@ -107,7 +107,7 @@ async function run() {
     await insertSection('c7', 'quote', '관계는 많지만 정작 외롭습니다.', '말하지 못한 말들은 마음 속에 흩어져 있습니다. 사람과 사람 사이에 잃어버린 감정의 온기를 회복하기 위해, 미처 전하지 못했던 말들을 모아보는 프로젝트였습니다.', 'fa-solid fa-envelope-open-text text-indigo-400', 2);
     await insertSection('c7', 'highlight', '💌 말하지 못했던 그 마음을, 익명으로 전합니다', '오프라인 공간에 마련된 우체통에서 누군가를 향한 고마움, 미안함, 그리움, 응원의 감정을 남겨주세요. 익명이지만 그 안에 담긴 감정만큼은 진실한 순간이 되었습니다.', 'fa-solid fa-heart text-red-400', 3);
     await insertSection('c7', 'checklist', '🎯 활동 결과', '', 'fa-solid fa-chart-bar text-blue-500', 4, ['수집된 편지: 312통', '전시 관람객: 약 520명', '전시 기간: 2025년 11월 1일 ~ 11월 7일 (오프라인 전시)']);
-    await insertSection('c7', 'faq', '시소의 공익 철학', '우리는 왜 정보가 아닌 마음을 나눌까요?', 'fa-solid fa-circle-question text-purple-400', 5, undefined, [
+    await insertSection('c7', 'faq', '이음의 공익 철학', '우리는 왜 정보가 아닌 마음을 나눌까요?', 'fa-solid fa-circle-question text-purple-400', 5, undefined, [
       { question: '왜 편지를 남기는 프로젝트를 기획했나요?', answer: '우리 사회는 많은 문제를 인지하지만, 서로에게 온기를 건네는 일에는 갈수록 인색해지고 있습니다. \'정보\'가 아닌 \'감정\'의 연결을 통해 잃어버렸던 사회적 감각을 회복하고자 했습니다.' },
       { question: '익명으로 적으면 대상에게 전달이 되나요?', answer: '수신자에게 보내기 위한 목적보다는, 익명이 보장된 안전한 공간에서 억눌린 감정을 표출하고, 그것들이 모인 전시를 통해 집단적인 위로와 순환을 이끌어내는 취지입니다.' }
     ]);

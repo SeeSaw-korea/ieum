@@ -22,7 +22,7 @@ const Home: React.FC<HomeProps> = ({ appState, toggleWishlist, setShowOnboarding
     return (
       <div className="animate-fadeIn flex items-center justify-center h-64">
         <div className="text-center">
-          <i className="fa-solid fa-spinner fa-spin text-2xl text-seeSawAmber mb-2"></i>
+          <i className="fa-solid fa-spinner fa-spin text-2xl text-ieumAmber mb-2"></i>
           <p className="text-gray-500">콘텐츠를 불러오는 중...</p>
         </div>
       </div>
@@ -116,10 +116,10 @@ const Home: React.FC<HomeProps> = ({ appState, toggleWishlist, setShowOnboarding
               }}
               className="flex flex-col items-center gap-2 group active:scale-95 transition-transform"
             >
-              <div className="w-14 h-14 rounded-2xl bg-seeSawLight/60 flex items-center justify-center text-xl transition-colors group-hover:bg-seeSawAmber/15">
+              <div className="w-14 h-14 rounded-2xl bg-ieumLight/60 flex items-center justify-center text-xl transition-colors group-hover:bg-ieumAmber/15">
                 <i className={`fa-solid ${cat.icon} ${cat.color}`}></i>
               </div>
-              <span className="text-[11px] font-bold text-seeSawDark whitespace-nowrap">{cat.label}</span>
+              <span className="text-[11px] font-bold text-ieumDark whitespace-nowrap">{cat.label}</span>
             </button>
           ))}
         </div>
@@ -127,7 +127,7 @@ const Home: React.FC<HomeProps> = ({ appState, toggleWishlist, setShowOnboarding
 
       {/* 배너 */}
       <section className="px-5 mb-6">
-        <div className="w-full bg-gradient-to-r from-seeSawAmber to-seeSawGold rounded-2xl p-5 text-left text-white shadow-lg shadow-seeSawAmber/20 overflow-hidden relative">
+        <div className="w-full bg-gradient-to-r from-ieumAmber to-ieumGold rounded-2xl p-5 text-left text-white shadow-lg shadow-ieumAmber/20 overflow-hidden relative">
           <div className="relative z-10">
             <h3 className="text-lg font-bold mb-1">불안에서 출발해 사회와 연결되는 참여 구조 ✨</h3>
             <p className="text-xs text-white/80">질문하고 행동하며, 균형과 연결을 만들어갑니다.</p>
@@ -136,10 +136,10 @@ const Home: React.FC<HomeProps> = ({ appState, toggleWishlist, setShowOnboarding
         </div>
       </section>
 
-      {/* 숫자로 보는 시소 */}
+      {/* 숫자로 보는 이음 */}
       <section className="px-5 mb-8">
         <div className="mb-4">
-          <h3 className="text-lg font-bold text-gray-900">숫자로 보는 시소</h3>
+          <h3 className="text-lg font-bold text-gray-900">숫자로 보는 이음</h3>
           <p className="text-xs text-gray-500 mt-0.5">불안에서 출발해 사회와 연결되는 청년들의 기록입니다.</p>
         </div>
         {/* 탭 */}
@@ -150,7 +150,7 @@ const Home: React.FC<HomeProps> = ({ appState, toggleWishlist, setShowOnboarding
               onClick={() => setStatsTab(tab.key)}
               className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${
                 statsTab === tab.key
-                  ? 'bg-seeSawAmber text-white shadow-sm'
+                  ? 'bg-ieumAmber text-white shadow-sm'
                   : 'bg-gray-100 text-gray-500'
               }`}
             >
@@ -162,8 +162,8 @@ const Home: React.FC<HomeProps> = ({ appState, toggleWishlist, setShowOnboarding
         <div className={`grid gap-3 ${statsTab === 'live' ? 'grid-cols-2' : 'grid-cols-2 sm:grid-cols-3'}`}>
           {statsData[statsTab].map((stat, idx) => (
             <div key={idx} className="bg-white rounded-2xl px-4 py-4 shadow-sm border border-gray-100 flex flex-col gap-2">
-              <div className="w-8 h-8 rounded-xl bg-seeSawAmber/10 flex items-center justify-center">
-                <i className={`fa-solid ${stat.icon} text-seeSawAmber text-sm`}></i>
+              <div className="w-8 h-8 rounded-xl bg-ieumAmber/10 flex items-center justify-center">
+                <i className={`fa-solid ${stat.icon} text-ieumAmber text-sm`}></i>
               </div>
               <div>
                 <p className="text-[11px] text-gray-400 font-medium whitespace-pre-line leading-tight">{stat.label}</p>
@@ -242,10 +242,10 @@ const Home: React.FC<HomeProps> = ({ appState, toggleWishlist, setShowOnboarding
         </section>
 
         {/* 4. Campaign Section */}
-        <section className="bg-seeSawLight/40 -mx-5 px-5 py-8">
+        <section className="bg-ieumLight/40 -mx-5 px-5 py-8">
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-1">
-              <span className="bg-seeSawAmber text-white text-[10px] font-bold px-2 py-0.5 rounded-full">실천</span>
+              <span className="bg-ieumAmber text-white text-[10px] font-bold px-2 py-0.5 rounded-full">실천</span>
               <h3 className="text-lg font-bold">일상 속 작은 실천, 캠페인</h3>
             </div>
             <p className="text-xs text-gray-500 leading-relaxed">
@@ -271,7 +271,7 @@ const Home: React.FC<HomeProps> = ({ appState, toggleWishlist, setShowOnboarding
         <section className="bg-amber-50/50 -mx-5 px-5 py-8 mb-10">
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-1">
-              <span className="bg-seeSawGold/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">아카이브</span>
+              <span className="bg-ieumGold/80 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">아카이브</span>
               <h3 className="text-lg font-bold">우리의 평범한 이야기, 인터뷰</h3>
             </div>
             <p className="text-xs text-gray-500 leading-relaxed">

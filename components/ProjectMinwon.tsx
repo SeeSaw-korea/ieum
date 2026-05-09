@@ -135,7 +135,7 @@ const ProjectMinwon: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             <span style={{ color: AMBER }}>반려될 수 없습니다."</span>
           </h1>
           <p style={{ fontSize: 14, color: GOVT_GREY, lineHeight: 1.8, marginBottom: 20 }}>
-            청년사회단체 시소는 <strong>1,000명의 대학생 민원</strong>을 모아<br />
+            청년사회단체 이음는 <strong>1,000명의 대학생 민원</strong>을 모아<br />
             정책 보고서를 발간하고 <strong>국회에 직접 전달</strong>합니다.
           </p>
 
@@ -322,7 +322,7 @@ const ProjectMinwon: React.FC<{ onBack: () => void }> = ({ onBack }) => {
               {loading ? '접수 중...' : '📋 공동 민원인으로 서명하기'}
             </button>
             <p style={{ fontSize: 11, color: '#aaa', textAlign: 'center', lineHeight: 1.7, marginBottom: 40 }}>
-              🔒 입력하신 정보는 정책 제안서 전달 및 시소 활동 안내 목적으로만 사용됩니다.<br />
+              🔒 입력하신 정보는 정책 제안서 전달 및 이음 활동 안내 목적으로만 사용됩니다.<br />
               개인정보는 민원 접수 이후 즉시 암호화하여 보관됩니다.
             </p>
 
@@ -331,7 +331,7 @@ const ProjectMinwon: React.FC<{ onBack: () => void }> = ({ onBack }) => {
               <div style={{ textAlign: 'center', marginBottom: 20 }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, marginBottom: 10 }}>
                   <div style={{ flex: 1, height: 1, background: WARM }} />
-                  <span style={{ fontSize: 12, fontWeight: 700, color: GOVT_GREY, letterSpacing: 1 }}>🏛️ 시소(Seesaw)는</span>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: GOVT_GREY, letterSpacing: 1 }}>🏛️ 이음(Ieum)는</span>
                   <div style={{ flex: 1, height: 1, background: WARM }} />
                 </div>
                 <p style={{ fontSize: 13, color: GOVT_GREY, lineHeight: 1.8 }}>

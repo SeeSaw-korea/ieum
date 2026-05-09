@@ -5,7 +5,7 @@ const pool = mysql.createPool({
   port: parseInt(process.env.DB_PORT || '3306'),
   user: process.env.DB_USER || 'swkim',
   password: process.env.DB_PASSWORD || '1234',
-  database: process.env.DB_NAME || 'seesaw',
+  database: process.env.DB_NAME || 'ieum',
   timezone: '+09:00',
   charset: 'utf8mb4',
   waitForConnections: true,

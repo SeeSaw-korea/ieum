@@ -46,7 +46,7 @@ async function run() {
   await ins(id, 'quote',
     '"균형은 완벽이 아니라 유연함이에요."',
     '📃 Editor\'s Note\n\n프리랜서라는 불확실한 길을 걸으며 김OO는 완벽함을 내려놓고 \'유연함\'으로 자신만의 균형을 찾아가고 있었다. 그녀가 전하는 이야기는 오늘을 사는 우리 모두에게 깊은 울림을 준다.\n\n완벽하지 않아도 괜찮다는 담담한 위로, 그리고 자신의 한계를 인정하는 용기. 이것이야말로 지속 가능한 삶과 작업의 비밀이라는 걸.',
-    'fa-solid fa-quote-left text-seeSawAmber', 2);
+    'fa-solid fa-quote-left text-ieumAmber', 2);
 
   // 섹션 3: 인터뷰 Q&A
   await ins(id, 'faq', '🎤 Interview', '', 'fa-solid fa-microphone text-indigo-400', 3, undefined, [
@@ -75,7 +75,7 @@ async function run() {
     'fa-solid fa-circle text-gray-400', 4);
 
   // 섹션 5: 청년에게 전하는 말
-  await ins(id, 'checklist', '💬 청년에게 전하는 말', '"완벽을 내려놓고, 나만의 균형을 찾아요."', 'fa-solid fa-heart text-seeSawAmber', 5, [
+  await ins(id, 'checklist', '💬 청년에게 전하는 말', '"완벽을 내려놓고, 나만의 균형을 찾아요."', 'fa-solid fa-heart text-ieumAmber', 5, [
     '완벽함에서 벗어나기 — 청년 여러분, 완벽해야 한다는 부담에서 조금은 벗어나셨으면 해요. 우리는 모두 각자의 속도로 걸어가고 있고, 그 속도가 느리거나 빠르다고 해서 틀린 건 아니니까요.',
     '나를 인정하는 용기 — 내가 지금 어느 지점에 있는지 스스로 느끼고 인정하는 것이 정말 중요해요. 완벽하지 않아도 괜찮아요. 오히려 그 불완전함 속에서 진짜 나를 발견할 수 있으니까요.',
     '꾸준히, 그리고 쉬어가기 — 작은 한 걸음이라도 꾸준히 내딛는 용기를 잃지 마세요. 그리고 가끔은 멈춰서서 숨 고를 시간도 꼭 챙기세요. 그 시간이 결국 더 나은 내일을 만드는 밑거름이 됩니다.',

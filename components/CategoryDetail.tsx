@@ -67,9 +67,9 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-seeSawCream flex items-center justify-center">
+      <div className="min-h-screen bg-ieumCream flex items-center justify-center">
         <div className="text-center">
-          <i className="fa-solid fa-spinner fa-spin text-3xl text-seeSawAmber mb-3"></i>
+          <i className="fa-solid fa-spinner fa-spin text-3xl text-ieumAmber mb-3"></i>
           <p className="text-gray-600 font-medium">{category} 콘텐츠를 불러오는 중...</p>
         </div>
       </div>
@@ -78,13 +78,13 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
 
   if (error) {
     return (
-      <div className="min-h-screen bg-seeSawCream flex items-center justify-center">
+      <div className="min-h-screen bg-ieumCream flex items-center justify-center">
         <div className="text-center">
           <i className="fa-solid fa-exclamation-triangle text-3xl text-red-500 mb-3"></i>
           <p className="text-gray-600 font-medium">콘텐츠를 불러오는데 실패했습니다.</p>
           <button 
             onClick={() => window.location.reload()} 
-            className="mt-4 px-6 py-2 bg-seeSawAmber text-white rounded-lg hover:bg-[#f49342] transition-colors"
+            className="mt-4 px-6 py-2 bg-ieumAmber text-white rounded-lg hover:bg-[#f49342] transition-colors"
           >
             다시 시도
           </button>
@@ -94,23 +94,23 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
   }
 
   return (
-    <div className="min-h-screen bg-seeSawCream animate-fadeIn">
+    <div className="min-h-screen bg-ieumCream animate-fadeIn">
       {/* Header (Sleek Glassmorphism) */}
-      <header className="sticky top-0 z-50 bg-seeSawCream/80 backdrop-blur-md border-b border-seeSawLight px-5 py-4 flex items-center justify-between transition-all">
+      <header className="sticky top-0 z-50 bg-ieumCream/80 backdrop-blur-md border-b border-ieumLight px-5 py-4 flex items-center justify-between transition-all">
         <div className="flex items-center gap-4">
-          <button onClick={onBack} className="p-1 text-gray-700 hover:text-seeSawAmber transition-colors">
+          <button onClick={onBack} className="p-1 text-gray-700 hover:text-ieumAmber transition-colors">
             <i className="fa-solid fa-arrow-left text-xl"></i>
           </button>
           <h1 className="text-xl font-extrabold text-gray-900 tracking-tight">{category}</h1>
         </div>
         <div className="flex items-center gap-5 text-gray-700">
-          <button onClick={() => navigate('/')} className="hover:text-seeSawAmber transition-colors"><i className="fa-solid fa-house text-lg"></i></button>
-          <button onClick={() => navigate('/search')} className="hover:text-seeSawAmber transition-colors"><i className="fa-solid fa-magnifying-glass text-lg"></i></button>
+          <button onClick={() => navigate('/')} className="hover:text-ieumAmber transition-colors"><i className="fa-solid fa-house text-lg"></i></button>
+          <button onClick={() => navigate('/search')} className="hover:text-ieumAmber transition-colors"><i className="fa-solid fa-magnifying-glass text-lg"></i></button>
         </div>
       </header>
 
       {/* Sub-category Pills */}
-      <div className="px-5 py-4 bg-seeSawCream">
+      <div className="px-5 py-4 bg-ieumCream">
         <div className="flex overflow-x-auto gap-2 pb-2 hide-scrollbar">
           {currentSubs.map((sub, idx) => (
             <button 
@@ -118,7 +118,7 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
               onClick={() => setActiveSubCategory(sub)}
               className={`px-4 py-2 rounded-full text-[13px] font-bold whitespace-nowrap transition-all shadow-sm ${
                 activeSubCategory === sub 
-                  ? 'bg-gradient-to-r from-seeSawAmber to-[#f49342] text-white shadow-seeSawAmber/30' 
+                  ? 'bg-gradient-to-r from-ieumAmber to-[#f49342] text-white shadow-ieumAmber/30' 
                   : 'bg-white text-gray-600 border border-gray-100 hover:bg-gray-50'
               }`}
             >
@@ -129,7 +129,7 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
       </div>
 
       {/* Functional Action Filters */}
-      <div className="flex items-center justify-between px-5 pb-5 pt-2 sticky top-[69px] z-40 bg-seeSawCream/90 backdrop-blur-sm">
+      <div className="flex items-center justify-between px-5 pb-5 pt-2 sticky top-[69px] z-40 bg-ieumCream/90 backdrop-blur-sm">
         <div className="flex items-center gap-2">
           {/* Status Filter Toggle */}
           <button 
@@ -163,8 +163,8 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
       <div className="px-5 pb-12 pt-2">
         <div className="flex justify-between items-end mb-5">
           <div>
-            <h2 className="text-xl font-bold text-gray-900 tracking-tight">당신을 위한 <span className="text-seeSawAmber">{category}</span></h2>
-            <p className="text-xs text-gray-500 mt-1 font-medium">SEE-SAW가 엄선한 이야기를 만나보세요</p>
+            <h2 className="text-xl font-bold text-gray-900 tracking-tight">당신을 위한 <span className="text-ieumAmber">{category}</span></h2>
+            <p className="text-xs text-gray-500 mt-1 font-medium">IEUM가 엄선한 이야기를 만나보세요</p>
           </div>
           <span className="text-xs font-bold text-gray-400 bg-gray-100 px-2 py-1 rounded-md">{filteredItems.length}개의 결과</span>
         </div>
@@ -173,7 +173,7 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
           {filteredItems.map(item => (
             <div 
               key={item.id} 
-              className="flex flex-col group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-seeSawAmber/20 transform hover:-translate-y-1"
+              className="flex flex-col group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-ieumAmber/20 transform hover:-translate-y-1"
               onClick={() => onItemClick(item)}
             >
               {/* Image Section */}
@@ -203,7 +203,7 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
                     {item.category}
                   </span>
                   {item.tag && (
-                    <span className="bg-black/80 backdrop-blur-sm text-seeSawAmber text-[10px] font-bold px-2 py-1 rounded-md shadow-sm">
+                    <span className="bg-black/80 backdrop-blur-sm text-ieumAmber text-[10px] font-bold px-2 py-1 rounded-md shadow-sm">
                       {item.tag}
                     </span>
                   )}
@@ -213,7 +213,7 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
               {/* Content Section */}
               <div className="p-4 flex flex-col justify-between flex-1">
                 <div>
-                  <h3 className="text-[15px] font-bold text-gray-900 line-clamp-2 leading-snug mb-1.5 group-hover:text-seeSawAmber transition-colors">
+                  <h3 className="text-[15px] font-bold text-gray-900 line-clamp-2 leading-snug mb-1.5 group-hover:text-ieumAmber transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-[12px] text-gray-500 line-clamp-2 leading-relaxed break-keep">
@@ -256,7 +256,7 @@ const CategoryDetail: React.FC<CategoryDetailProps> = ({
                  setActiveSubCategory('전체');
                  setStatusFilter('전체');
               }}
-              className="mt-5 px-5 py-2.5 bg-seeSawAmber text-white text-xs font-bold rounded-xl shadow-md hover:bg-[#f49342] transition-colors"
+              className="mt-5 px-5 py-2.5 bg-ieumAmber text-white text-xs font-bold rounded-xl shadow-md hover:bg-[#f49342] transition-colors"
             >
               전체 보기로 돌아가기
             </button>

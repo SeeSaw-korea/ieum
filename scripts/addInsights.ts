@@ -39,7 +39,7 @@ async function run() {
   );
   await ins('ins1', 'highlight', '🔎 2025년 8월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '조용한 퇴사(Quiet Quitting) 확산 — 출처: 동아일보 「조용한 퇴사 유행」',
       '직장인 번아웃 증가 — 출처: 잡코리아 설문 / Class101 리포트',
@@ -62,7 +62,7 @@ async function run() {
   await ins('ins1', 'quote',
     '👉 "열심히"보다 "지속 가능하게" 일하는 시대',
     '청년들에게 중요한 질문은 더 이상 "어디서 일하느냐"가 아니다.\n\n이 일이 나를 소모시키는가, 아니면 유지시키는가.\n\n그 질문에 솔직하게 답할 수 있을 때, 진짜 커리어 설계가 시작된다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins1 (8월) 업데이트 완료');
 
@@ -75,7 +75,7 @@ async function run() {
   );
   await ins('ins2', 'highlight', '🔎 2025년 9월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       'SNS 기반 비교 심화 — 출처: 중앙일보 「SNS 비교 피로 세대」',
       '연봉·취업 콘텐츠 과잉 — 출처: 한국경제 취업 트렌드 분석',
@@ -98,7 +98,7 @@ async function run() {
   await ins('ins2', 'quote',
     '👉 "나는 누구의 기준으로 살고 있는가"',
     '청년들에게 지금 필요한 질문은 "나는 어디까지 왔는가"가 아니다.\n\n내가 설정한 속도와 방향인지, 아니면 알고리즘이 보여준 누군가의 성취를 따라가고 있는지를 먼저 물어야 한다.\n\n자신만의 기준을 되찾는 것이, 비교 피로에서 벗어나는 첫 번째 출발점이다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins2 (9월) 완료');
 
@@ -111,7 +111,7 @@ async function run() {
   );
   await ins('ins3', 'highlight', '🔎 2025년 10월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '인간관계 피로 증가 — 출처: 경향신문 인간관계 변화 분석',
       '\'손절\' 문화 확산',
@@ -134,7 +134,7 @@ async function run() {
   await ins('ins3', 'quote',
     '👉 "나는 관계를 유지할 준비가 되어 있는가"',
     '관계 문제는 개인 성향의 문제가 아니라 사회 구조의 결과다.\n\n청년들에게 필요한 질문은 "누가 나와 맞는가"가 아니라, 불편함과 갈등을 통과할 준비가 되어 있는가를 먼저 물어야 한다.\n\n깊은 관계는 조건이 맞는 순간에 생기는 것이 아니라, 불편한 순간을 함께 버텨낸 결과다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins3 (10월) 완료');
 
@@ -147,7 +147,7 @@ async function run() {
   );
   await ins('ins4', 'highlight', '🔎 2025년 11월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '청년 부채 증가 — 출처: 한국은행 청년 금융 보고서',
       '주거 불안 심화',
@@ -170,7 +170,7 @@ async function run() {
   await ins('ins4', 'quote',
     '👉 "이 환경에서 현실적인 선택은 무엇인가"',
     '청년들에게 필요한 질문은 "어떻게 성공할까"가 아니다.\n\n먼저 지금 주어진 환경을 정확히 직시하고, 그 안에서 가장 현실적인 선택이 무엇인지를 물어야 한다.\n\n구조적 한계를 인정하는 것은 포기가 아니라, 현명한 출발점을 찾는 과정이다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins4 (11월) 완료');
 
@@ -183,7 +183,7 @@ async function run() {
   );
   await ins('ins5', 'highlight', '🔎 2025년 12월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '연말 고립감 증가 — 출처: 한겨레 1인 가구 및 고립 문제',
       '관계 피로 심화',
@@ -206,7 +206,7 @@ async function run() {
   await ins('ins5', 'quote',
     '👉 "누구와 진짜 연결되어 있는가"',
     '청년들에게 필요한 질문은 "얼마나 많은 사람과 연결되어 있는가"가 아니다.\n\n힘든 순간에 문자 한 통 보낼 수 있는 사람이 있는지, 그 사람과 마지막으로 진짜 대화를 나눈 것이 언제인지를 먼저 떠올려보는 것.\n\n그것이 연말을 덜 외롭게 보내는 가장 현실적인 방법이다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins5 (12월) 완료');
 
@@ -219,7 +219,7 @@ async function run() {
   );
   await ins('ins6', 'highlight', '🔎 2026년 1월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '자기계발 열풍 — 출처: 조선일보 자기계발 트렌드',
       '루틴·습관 콘텐츠 증가',
@@ -242,7 +242,7 @@ async function run() {
   await ins('ins6', 'quote',
     '👉 "어떻게 계속할 수 있을까"',
     '청년들에게 필요한 질문은 "얼마나 크게 바꿀까"가 아니다.\n\n어떻게 하면 내일도, 다음 달에도, 내년에도 계속할 수 있는 구조를 만들 수 있는가.\n\n변화의 크기보다 변화의 지속성이 삶을 실제로 바꾼다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins6 (1월) 완료');
 
@@ -255,7 +255,7 @@ async function run() {
   );
   await ins('ins7', 'highlight', '🔎 2026년 2월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '번아웃 증가 — 출처: 전자신문 직장인 번아웃 기사',
       '멀티태스킹 피로',
@@ -278,7 +278,7 @@ async function run() {
   await ins('ins7', 'quote',
     '👉 "얼마나 깊게 했는가"',
     '청년들에게 필요한 질문은 "얼마나 많이 했는가"가 아니다.\n\n오늘 가장 중요한 한 가지에 진짜로 집중했는가.\n\n바쁨은 성취가 아니다. 깊이 있는 집중이 진짜 생산성의 척도다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins7 (2월) 완료');
 
@@ -291,7 +291,7 @@ async function run() {
   );
   await ins('ins8', 'highlight', '🔎 2026년 3월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '취업 경쟁 심화 — 출처: 세계일보 취업 시장 분석',
       '포트폴리오 중심 채용',
@@ -314,7 +314,7 @@ async function run() {
   await ins('ins8', 'quote',
     '👉 "나는 무엇을 보여줄 수 있는가"',
     '청년들에게 필요한 질문은 "나는 무엇을 할 수 있는가"가 아니다.\n\n지금 당장 보여줄 수 있는 결과물이 있는가. 그것이 없다면 어떻게 만들 수 있는가.\n\n가시성은 타고나는 것이 아니라, 기록과 공유의 습관으로 만들어진다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins8 (3월) 완료');
 
@@ -327,7 +327,7 @@ async function run() {
   );
   await ins('ins9', 'highlight', '🔎 2026년 4월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '커뮤니티 기반 성장 — 출처: 동아일보 커뮤니티 트렌드',
       '오프라인 모임 증가',
@@ -350,7 +350,7 @@ async function run() {
   await ins('ins9', 'quote',
     '👉 "누구와 함께할 수 있는가"',
     '청년들에게 필요한 질문은 "혼자 얼마나 잘할 수 있는가"가 아니다.\n\n함께하면 혼자서는 만들 수 없는 것을 만들어낼 수 있는 사람이 누구인지를 찾는 것.\n\n그 연결이 개인의 성장을 넘어, 함께하는 삶의 가능성을 넓힌다.',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
   console.log('✅ ins9 (4월) 완료');
 

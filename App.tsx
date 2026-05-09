@@ -86,11 +86,11 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="max-w-md mx-auto min-h-screen bg-seeSawCream relative overflow-x-hidden">
+    <div className="max-w-md mx-auto min-h-screen bg-ieumCream relative overflow-x-hidden">
       {!isFullScreenPage && (
-        <header className="sticky top-0 z-40 bg-seeSawCream/90 backdrop-blur-md px-5 py-4 flex justify-between items-center border-b border-seeSawLight">
+        <header className="sticky top-0 z-40 bg-ieumCream/90 backdrop-blur-md px-5 py-4 flex justify-between items-center border-b border-ieumLight">
           <div className="h-8 flex items-center cursor-pointer" onClick={() => navigate('/')}>
-            <img src={`${import.meta.env.BASE_URL}seesaw-logo.png`} alt="SEE-SAW Logo" className="h-10 w-auto object-contain" />
+            <img src={`${import.meta.env.BASE_URL}ieum-logo.png`} alt="IEUM Logo" className="h-10 w-auto object-contain" />
           </div>
           <div className="flex gap-4 items-center">
             <button
@@ -143,24 +143,24 @@ const App: React.FC = () => {
       </main>
       
       {!isFullScreenPage && (
-        <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-seeSawCream/95 backdrop-blur-md border-t border-seeSawLight px-8 py-3 flex justify-between items-center z-50">
+        <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-ieumCream/95 backdrop-blur-md border-t border-ieumLight px-8 py-3 flex justify-between items-center z-50">
           <button 
             onClick={() => navigate('/')}
-            className={`flex flex-col items-center gap-1 transition-colors ${activeTab === 'home' ? 'text-seeSawAmber' : 'text-seeSawMuted'}`}
+            className={`flex flex-col items-center gap-1 transition-colors ${activeTab === 'home' ? 'text-ieumAmber' : 'text-ieumMuted'}`}
           >
             <i className={`fa-solid fa-house text-xl`}></i>
             <span className="text-[10px] font-bold">홈</span>
           </button>
           <button
             onClick={() => navigate('/category')}
-            className={`flex flex-col items-center gap-1 transition-colors ${activeTab === 'category' ? 'text-seeSawAmber' : 'text-seeSawMuted'}`}
+            className={`flex flex-col items-center gap-1 transition-colors ${activeTab === 'category' ? 'text-ieumAmber' : 'text-ieumMuted'}`}
           >
             <i className={`fa-solid fa-layer-group text-xl`}></i>
             <span className="text-[10px] font-bold">카테고리</span>
           </button>
           <button
             onClick={() => navigate('/more')}
-            className={`flex flex-col items-center gap-1 transition-colors ${activeTab === 'more' ? 'text-seeSawAmber' : 'text-seeSawMuted'}`}
+            className={`flex flex-col items-center gap-1 transition-colors ${activeTab === 'more' ? 'text-ieumAmber' : 'text-ieumMuted'}`}
           >
             <i className={`fa-solid fa-ellipsis text-xl`}></i>
             <span className="text-[10px] font-bold">더 알아보기</span>
@@ -180,9 +180,9 @@ const ContentDetailWrapper: React.FC<{ toggleWishlist: (id: string) => void, wis
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-seeSawCream flex items-center justify-center">
+      <div className="min-h-screen bg-ieumCream flex items-center justify-center">
         <div className="text-center">
-          <i className="fa-solid fa-spinner fa-spin text-3xl text-seeSawAmber mb-3"></i>
+          <i className="fa-solid fa-spinner fa-spin text-3xl text-ieumAmber mb-3"></i>
           <p className="text-gray-600 font-medium">콘텐츠를 불러오는 중...</p>
         </div>
       </div>
@@ -191,13 +191,13 @@ const ContentDetailWrapper: React.FC<{ toggleWishlist: (id: string) => void, wis
 
   if (error || !item) {
     return (
-      <div className="min-h-screen bg-seeSawCream flex items-center justify-center">
+      <div className="min-h-screen bg-ieumCream flex items-center justify-center">
         <div className="text-center">
           <i className="fa-solid fa-exclamation-triangle text-3xl text-red-500 mb-3"></i>
           <p className="text-gray-600 font-medium">콘텐츠를 찾을 수 없습니다.</p>
           <button 
             onClick={() => navigate('/')} 
-            className="mt-4 px-6 py-2 bg-seeSawAmber text-white rounded-lg hover:bg-[#f49342] transition-colors"
+            className="mt-4 px-6 py-2 bg-ieumAmber text-white rounded-lg hover:bg-[#f49342] transition-colors"
           >
             홈으로 돌아가기
           </button>

@@ -67,8 +67,8 @@ const ProjectTest: React.FC<{ onBack: () => void }> = ({ onBack }) => {
   };
 
   return (
-    <div className="min-h-screen bg-seeSawCream animate-fadeIn flex flex-col pb-20">
-      <header className="sticky top-0 bg-seeSawCream/90 backdrop-blur-md px-5 py-4 flex justify-between items-center z-10">
+    <div className="min-h-screen bg-ieumCream animate-fadeIn flex flex-col pb-20">
+      <header className="sticky top-0 bg-ieumCream/90 backdrop-blur-md px-5 py-4 flex justify-between items-center z-10">
         <button onClick={step === 5 ? () => navigate('/') : onBack} className="p-1">
           <i className="fa-solid fa-xmark text-xl text-gray-800"></i>
         </button>
@@ -78,11 +78,11 @@ const ProjectTest: React.FC<{ onBack: () => void }> = ({ onBack }) => {
       {step === 0 && (
         <div className="flex-1 flex flex-col items-center justify-center p-8 text-center animate-fadeIn">
           <div className="text-6xl mb-6">🔥</div>
-          <h1 className="text-2xl font-bold text-seeSawDark mb-4 leading-tight">나는 어떤<br/>독립운동가 유형일까?</h1>
+          <h1 className="text-2xl font-bold text-ieumDark mb-4 leading-tight">나는 어떤<br/>독립운동가 유형일까?</h1>
           <p className="text-gray-500 mb-10 text-sm">1900년대 격동의 시대로 돌아가<br/>당신의 가치관과 선택을 확인해보세요.</p>
           <button 
             onClick={handleStart}
-            className="w-full bg-seeSawAmber text-white font-bold text-lg py-4 rounded-xl shadow-lg hover:bg-seeSawGold transition-all transform active:scale-95"
+            className="w-full bg-ieumAmber text-white font-bold text-lg py-4 rounded-xl shadow-lg hover:bg-ieumGold transition-all transform active:scale-95"
           >
             테스트 시작하기
           </button>
@@ -99,13 +99,13 @@ const ProjectTest: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             </div>
             <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
               <div 
-                className="bg-seeSawAmber h-full transition-all duration-300" 
+                className="bg-ieumAmber h-full transition-all duration-300" 
                 style={{ width: `${(step / QUESTIONS.length) * 100}%` }}
               ></div>
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-seeSawDark mb-10 leading-relaxed text-center mt-10">
+          <h2 className="text-xl font-bold text-ieumDark mb-10 leading-relaxed text-center mt-10">
             {QUESTIONS[step - 1].text}
           </h2>
 
@@ -114,7 +114,7 @@ const ProjectTest: React.FC<{ onBack: () => void }> = ({ onBack }) => {
               <button 
                 key={idx}
                 onClick={() => handleAnswer(opt.score)}
-                className="w-full bg-white border border-seeSawLight p-5 rounded-xl text-left shadow-sm hover:border-seeSawAmber hover:shadow-md transition-all active:bg-gray-50 text-[15px] font-medium text-gray-800"
+                className="w-full bg-white border border-ieumLight p-5 rounded-xl text-left shadow-sm hover:border-ieumAmber hover:shadow-md transition-all active:bg-gray-50 text-[15px] font-medium text-gray-800"
               >
                 {opt.text}
               </button>
@@ -126,7 +126,7 @@ const ProjectTest: React.FC<{ onBack: () => void }> = ({ onBack }) => {
       {/* Loading Step */}
       {step === 4 && (
         <div className="flex-1 flex flex-col items-center justify-center p-8 text-center animate-fadeIn">
-          <i className="fa-solid fa-spinner fa-spin text-4xl text-seeSawAmber mb-4"></i>
+          <i className="fa-solid fa-spinner fa-spin text-4xl text-ieumAmber mb-4"></i>
           <p className="font-bold text-gray-700 animate-pulse">당신의 선택을 분석하고 있습니다...</p>
         </div>
       )}
@@ -136,10 +136,10 @@ const ProjectTest: React.FC<{ onBack: () => void }> = ({ onBack }) => {
         <div className="flex-1 flex flex-col p-6 animate-fadeIn overflow-y-auto">
           <div className="text-center mt-10 mb-8">
             <h3 className="text-gray-500 font-bold text-sm mb-2">당신은 격동의 시대 속,</h3>
-            <h1 className="text-2xl font-black text-seeSawAmber leading-tight mb-6">
+            <h1 className="text-2xl font-black text-ieumAmber leading-tight mb-6">
               "{getMatchedResult()}"
             </h1>
-            <div className="w-32 h-32 bg-white rounded-full mx-auto shadow-md border border-seeSawLight flex items-center justify-center text-5xl">
+            <div className="w-32 h-32 bg-white rounded-full mx-auto shadow-md border border-ieumLight flex items-center justify-center text-5xl">
               {getMatchedResult().includes('지도자') && '🧭'}
               {getMatchedResult().includes('실천가') && '🧨'}
               {getMatchedResult().includes('결단형') && '⚖️'}
@@ -147,19 +147,19 @@ const ProjectTest: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-2xl shadow-sm border border-seeSawLight space-y-4 mb-8">
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-ieumLight space-y-4 mb-8">
             <p className="text-sm leading-relaxed text-gray-700 text-center">
               당신과 같은 수많은 분들이 각자의 위치에서 헌신했기에 오늘날의 우리가 있습니다. 하지만 아직 그 후손들 중 일부는 우리 사회의 보이지 않는 곳에서 어려움을 겪고 있습니다. 
             </p>
-            <p className="text-xs font-bold text-center text-seeSawAmber">
-              SEE-SAW와 함께 작은 연대를 시작해볼까요?
+            <p className="text-xs font-bold text-center text-ieumAmber">
+              IEUM와 함께 작은 연대를 시작해볼까요?
             </p>
           </div>
 
           <div className="space-y-3 mt-auto pb-8">
             <button 
               onClick={() => navigate('/form-independence')}
-              className="w-full bg-seeSawAmber text-white font-bold text-lg py-4 rounded-xl shadow-lg hover:bg-seeSawGold transition-colors"
+              className="w-full bg-ieumAmber text-white font-bold text-lg py-4 rounded-xl shadow-lg hover:bg-ieumGold transition-colors"
             >
               캠페인 동참하기
             </button>

@@ -31,8 +31,8 @@ const MyPage: React.FC<MyPageProps> = ({ appState, toggleWishlist, onLogout, not
     <div className="px-5 space-y-8 py-4">
       {/* Profile */}
       <div className="flex items-center gap-4">
-        <div className="w-16 h-16 bg-seeSawAmber/10 rounded-full flex items-center justify-center overflow-hidden border-2 border-seeSawAmber/20">
-          <i className="fa-solid fa-user text-3xl text-seeSawAmber"></i>
+        <div className="w-16 h-16 bg-ieumAmber/10 rounded-full flex items-center justify-center overflow-hidden border-2 border-ieumAmber/20">
+          <i className="fa-solid fa-user text-3xl text-ieumAmber"></i>
         </div>
         <div>
           <h2 className="text-lg font-bold">청년 매칭 유저</h2>
@@ -40,7 +40,7 @@ const MyPage: React.FC<MyPageProps> = ({ appState, toggleWishlist, onLogout, not
         </div>
         <button 
           onClick={() => navigate('/login')}
-          className="ml-auto text-xs font-bold text-seeSawAmber bg-seeSawAmber/5 px-3 py-1.5 rounded-full border border-seeSawAmber/20"
+          className="ml-auto text-xs font-bold text-ieumAmber bg-ieumAmber/5 px-3 py-1.5 rounded-full border border-ieumAmber/20"
         >
           정보 수정
         </button>
@@ -54,7 +54,7 @@ const MyPage: React.FC<MyPageProps> = ({ appState, toggleWishlist, onLogout, not
         </div>
         <div className="flex flex-col items-center">
           <span className="text-xs text-gray-500 mb-1">찜한 목록</span>
-          <span className="text-lg font-bold text-seeSawAmber">{appState.wishlist.length}</span>
+          <span className="text-lg font-bold text-ieumAmber">{appState.wishlist.length}</span>
         </div>
         <div className="flex flex-col items-center">
           <span className="text-xs text-gray-500 mb-1">지원금 알림</span>
@@ -90,7 +90,7 @@ const MyPage: React.FC<MyPageProps> = ({ appState, toggleWishlist, onLogout, not
                   }}
                   className="absolute top-2 right-2 w-7 h-7 bg-white rounded-full flex items-center justify-center shadow-md"
                 >
-                  <i className="fa-solid fa-heart text-seeSawAmber text-sm"></i>
+                  <i className="fa-solid fa-heart text-ieumAmber text-sm"></i>
                 </button>
               </div>
             ))}
@@ -111,7 +111,7 @@ const MyPage: React.FC<MyPageProps> = ({ appState, toggleWishlist, onLogout, not
             </svg>
           </div>
           <div className="text-left flex-1">
-            <p className="text-sm font-black text-[#3C1E1E]">시소 카카오톡 채널 추가</p>
+            <p className="text-sm font-black text-[#3C1E1E]">이음 카카오톡 채널 추가</p>
             <p className="text-xs text-[#3C1E1E]/70 font-medium mt-0.5">채널 추가하고 소식을 가장 먼저 받아보세요</p>
           </div>
           <div className="flex-shrink-0 bg-[#3C1E1E]/10 rounded-full px-3 py-1">

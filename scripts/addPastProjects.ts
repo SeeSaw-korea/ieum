@@ -21,7 +21,7 @@ const projects = [
         type: 'quote',
         subtitle: '사람들은 말하지 않는 것이 아니라, 말할 수 있는 방식이 없었을지도 모른다.',
         body: '\'익명의 온도\'는 이름 없이, 관계 없이, 지금의 감정을 그대로 남길 수 있는 공간을 만들기 위해 시작되었다. 누군가에게 전하지 못한 말, 스스로에게조차 정리하지 못했던 마음을 익명이라는 방식으로 꺼내보는 작은 시도였다.',
-        iconClass: 'fa-solid fa-quote-left text-seeSawAmber',
+        iconClass: 'fa-solid fa-quote-left text-ieumAmber',
         extraData: null
       },
       {
@@ -79,7 +79,7 @@ const projects = [
         type: 'quote',
         subtitle: '취향은 발견되는 것이 아니라 드러나는 것이다.',
         body: '\'취향 교환소\'는 "내가 좋아하는 게 맞는 걸까?"라는 멈춤을 깨기 위해 만들어진 프로젝트다. 누군가의 취향을 경험하고, 또 나의 취향을 누군가에게 건네는 과정 속에서 서로를 이해하는 연결이 시작된다.',
-        iconClass: 'fa-solid fa-quote-left text-seeSawAmber',
+        iconClass: 'fa-solid fa-quote-left text-ieumAmber',
         extraData: null
       },
       {
@@ -138,7 +138,7 @@ const projects = [
         type: 'quote',
         subtitle: '환경은 생각보다 많은 것을 바꾼다.',
         body: '\'같이 버티는 공간\'은 결과를 공유하기보다 과정을 함께 버티는 경험에 집중한 프로젝트다. 같은 공간에서 각자의 일을 하며 서로의 존재만으로도 지속할 수 있는 환경을 만들고자 했다.',
-        iconClass: 'fa-solid fa-quote-left text-seeSawAmber',
+        iconClass: 'fa-solid fa-quote-left text-ieumAmber',
         extraData: null
       },
       {

@@ -25,17 +25,17 @@ const MorePage: React.FC = () => {
         <i className="fa-solid fa-chevron-right text-[#3C1E1E]/40 text-sm flex-shrink-0"></i>
       </button>
 
-      {/* 시소 홈페이지 배너 */}
+      {/* 이음 홈페이지 배너 */}
       <button
-        onClick={() => window.open('https://seesaw-society.org', '_blank')}
+        onClick={() => window.open('https://ieum-society.org', '_blank')}
         className="w-full rounded-2xl overflow-hidden flex items-center gap-4 px-5 py-5 shadow-sm bg-white border border-gray-100 active:scale-[0.98] transition-all"
       >
-        <div className="w-12 h-12 flex-shrink-0 bg-seeSawAmber/10 rounded-xl flex items-center justify-center">
-          <i className="fa-solid fa-earth-asia text-seeSawAmber text-xl"></i>
+        <div className="w-12 h-12 flex-shrink-0 bg-ieumAmber/10 rounded-xl flex items-center justify-center">
+          <i className="fa-solid fa-earth-asia text-ieumAmber text-xl"></i>
         </div>
         <div className="text-left flex-1">
-          <p className="text-base font-black text-gray-900">시소 홈페이지 바로가기</p>
-          <p className="text-xs text-gray-400 font-medium mt-0.5">seesaw-society.org</p>
+          <p className="text-base font-black text-gray-900">이음 홈페이지 바로가기</p>
+          <p className="text-xs text-gray-400 font-medium mt-0.5">ieum-society.org</p>
         </div>
         <i className="fa-solid fa-chevron-right text-gray-300 text-sm flex-shrink-0"></i>
       </button>

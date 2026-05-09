@@ -49,7 +49,7 @@ async function updateProjects() {
         type: 'quote',
         subtitle: '장애를 \'도움의 대상\'이 아닌, 다른 방식의 경험으로 바라봅니다.',
         body: '본 공모전은 비장애인도 함께 참여하고 싶어지는 자연스러운 연결 구조를 만드는 아이디어를 제안하는 공모전입니다. 단순한 기능 제안이 아닌, 사람과 사람을 연결하는 구조 설계를 지향합니다.',
-        iconClass: 'fa-solid fa-quote-left text-seeSawAmber',
+        iconClass: 'fa-solid fa-quote-left text-ieumAmber',
         extraData: null, faqData: null, progressData: null
       },
       {
@@ -130,7 +130,7 @@ async function updateProjects() {
 
     console.log('✅ Inserted sections for p1');
 
-    // ── p2: 시소 손편지 프로젝트 ──────────────────────────────
+    // ── p2: 이음 손편지 프로젝트 ──────────────────────────────
 
     // Delete p2 if exists (clean re-run)
     const p2Sections = await executeQuery<any>(
@@ -151,7 +151,7 @@ async function updateProjects() {
       VALUES (?, ?, ?, ?, ?, ?, ?)
     `, [
       'p2',
-      '[프로젝트] 시소 손편지 프로젝트',
+      '[프로젝트] 이음 손편지 프로젝트',
       '프로젝트',
       '당신의 작은 손편지 한 장이 전장의 영웅에게 따뜻한 위로와 10만 원의 후원금이 됩니다.',
       '/image/letter-project.jpeg',
@@ -165,7 +165,7 @@ async function updateProjects() {
         type: 'quote',
         subtitle: '20대의 일상이 빚어낸 10만 원의 기적',
         body: '지금 우리가 누리는 평범한 일상, 노트북 앞의 커피 한 잔과 도서관에서의 여유는 70년 전, 같은 20대를 전장에서 보낸 영웅들의 희생으로 만들어졌습니다.',
-        iconClass: 'fa-solid fa-quote-left text-seeSawAmber',
+        iconClass: 'fa-solid fa-quote-left text-ieumAmber',
         extraData: null
       },
       {
@@ -178,7 +178,7 @@ async function updateProjects() {
       {
         type: 'checklist',
         subtitle: '■ 프로젝트 정보',
-        body: '참전용사들이 겪는 현실적 어려움을 해결하기 위해 시소가 직접 기획한 프로젝트입니다.',
+        body: '참전용사들이 겪는 현실적 어려움을 해결하기 위해 이음가 직접 기획한 프로젝트입니다.',
         iconClass: 'fa-solid fa-list-check text-green-500',
         extraData: [
           '후원 대상: 6.25 참전용사',
@@ -193,7 +193,7 @@ async function updateProjects() {
         iconClass: 'fa-solid fa-pen-nib text-indigo-500',
         extraData: [
           '참전용사에게 감사의 마음을 담은 손편지 작성',
-          '시소 홈페이지 또는 SNS를 통해 제출',
+          '이음 홈페이지 또는 SNS를 통해 제출',
           '손편지 1장당 기업이 10만 원 후원금으로 전환하여 전달'
         ]
       },

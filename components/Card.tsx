@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({ item, isWishlisted, onToggleWishlist, onCli
           className="w-full h-full object-contain"
         />
         {item.tag && (
-          <div className="absolute bottom-2 left-2 bg-seeSawAmber text-white text-[9px] font-bold px-1.5 py-0.5 rounded">
+          <div className="absolute bottom-2 left-2 bg-ieumAmber text-white text-[9px] font-bold px-1.5 py-0.5 rounded">
             {item.tag}
           </div>
         )}
@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({ item, isWishlisted, onToggleWishlist, onCli
           }}
           className="absolute top-2 right-2 w-7 h-7 flex items-center justify-center bg-white/60 backdrop-blur-sm rounded-full"
         >
-          <i className={`fa-${isWishlisted ? 'solid' : 'regular'} fa-heart text-seeSawAmber text-sm`}></i>
+          <i className={`fa-${isWishlisted ? 'solid' : 'regular'} fa-heart text-ieumAmber text-sm`}></i>
         </button>
       </div>
       <div className="p-3">

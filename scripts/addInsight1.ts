@@ -42,7 +42,7 @@ async function run() {
   // 섹션 1: 주요 이슈
   await ins(id, 'highlight', '🔎 2025년 8월 주요 이슈',
     '이달의 청년 사회 키워드를 짚어봅니다.',
-    'fa-solid fa-magnifying-glass text-seeSawAmber', 1,
+    'fa-solid fa-magnifying-glass text-ieumAmber', 1,
     [
       '조용한 퇴사(Quiet Quitting) 확산 — 출처: 동아일보 「조용한 퇴사 유행」',
       '직장인 번아웃 증가 — 출처: 잡코리아 설문 / Class101 리포트',
@@ -71,7 +71,7 @@ async function run() {
   await ins(id, 'quote',
     '👉 "열심히"보다 "지속 가능하게" 일하는 시대',
     '청년들에게 중요한 질문은 더 이상 "어디서 일하느냐"가 아니다.\n\n👉 "이 일이 나를 소모시키는가, 유지시키는가"',
-    'fa-solid fa-quote-left text-seeSawAmber', 4
+    'fa-solid fa-quote-left text-ieumAmber', 4
   );
 
   console.log('✅ ins1 (2025년 8월 인사이트) 추가 완료');

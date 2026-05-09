@@ -45,11 +45,11 @@ async function run() {
       '2025-06-24 00:00:00'
     );
     await insert('s4', 'highlight', '✅ 진행 완료 | 2025년 6월 24일 (화) 18:00', '본 강연은 2025년 6월 24일 서울 마포구 홍대 스페이스M에서 성공적으로 진행되었습니다. 참여해주신 모든 분들께 감사드립니다.', 'fa-solid fa-circle-check text-green-500', 1);
-    await insert('s4', 'quote', '꿈은 무게가 있다. 그래서 혼자 들기엔 너무 무거울 때가 있다.', '현대 사회는 불확실성과 빠른 변화 속에서 꿈과 도전 사이의 균형을 찾기 어려운 시대입니다. 이번 강연은 개인의 열망과 사회적 기대 사이에서 고민하는 20대 청년들에게, 꿈꾸기를 두려워하지 않고 현실과 조화를 이루는 방법을 함께 모색했습니다.', 'fa-solid fa-quote-left text-seeSawAmber', 2);
+    await insert('s4', 'quote', '꿈은 무게가 있다. 그래서 혼자 들기엔 너무 무거울 때가 있다.', '현대 사회는 불확실성과 빠른 변화 속에서 꿈과 도전 사이의 균형을 찾기 어려운 시대입니다. 이번 강연은 개인의 열망과 사회적 기대 사이에서 고민하는 20대 청년들에게, 꿈꾸기를 두려워하지 않고 현실과 조화를 이루는 방법을 함께 모색했습니다.', 'fa-solid fa-quote-left text-ieumAmber', 2);
     await insert('s4', 'checklist', '📌 강연 정보', '', 'fa-solid fa-location-dot text-red-400', 3, [
       '일시: 2025년 6월 24일 (화) 오후 6시',
       '장소: 서울 마포구 서교동 양화로 15길 17 스페이스M',
-      '주최: SEE-SAW',
+      '주최: IEUM',
       '참가 대상: 20대 누구나 가능'
     ]);
     await insert('s4', 'steps', '💡 강연에서 다룬 주제', '', 'fa-solid fa-list-check text-blue-500', 4, [
@@ -83,11 +83,11 @@ async function run() {
       '2025-03-02 00:00:00'
     );
     await insert('s5', 'highlight', '✅ 진행 완료 | 2025년 3월 2일 (일) 18:00', '본 강연은 2025년 3월 2일 서울 마포구 홍대 스페이스M에서 성공적으로 진행되었습니다. 참여해주신 모든 분들께 감사드립니다.', 'fa-solid fa-circle-check text-green-500', 1);
-    await insert('s5', 'quote', '서툴러도 괜찮다. 조금 돌아가도 괜찮다. 지금 네가 걷는 그 길이 네 길이다.', '모두가 비슷한 걸 선택해야 덜 불안해지는 요즘, 숨겨뒀던 나만의 길을 다시 꺼내는 시간. 누구 눈치 보지 않고, 조금 서툴러도 괜찮다고 서로에게 용기를 건네며 나와 세상 사이에서 균형을 찾아가는 이야기를 차분히 듣고 스스로의 길을 마주하는 강연이었습니다.', 'fa-solid fa-quote-left text-seeSawAmber', 2);
+    await insert('s5', 'quote', '서툴러도 괜찮다. 조금 돌아가도 괜찮다. 지금 네가 걷는 그 길이 네 길이다.', '모두가 비슷한 걸 선택해야 덜 불안해지는 요즘, 숨겨뒀던 나만의 길을 다시 꺼내는 시간. 누구 눈치 보지 않고, 조금 서툴러도 괜찮다고 서로에게 용기를 건네며 나와 세상 사이에서 균형을 찾아가는 이야기를 차분히 듣고 스스로의 길을 마주하는 강연이었습니다.', 'fa-solid fa-quote-left text-ieumAmber', 2);
     await insert('s5', 'checklist', '📌 강연 정보', '', 'fa-solid fa-location-dot text-red-400', 3, [
       '일시: 2025년 3월 2일 (일) 오후 6시',
       '장소: 서울 마포구 서교동 양화로 15길 17 스페이스M',
-      '주최: SEE-SAW',
+      '주최: IEUM',
       '참가 대상: 20대 누구나 가능'
     ]);
     await insert('s5', 'steps', '💡 강연에서 다룬 주제', '', 'fa-solid fa-list-check text-blue-500', 4, [
@@ -121,11 +121,11 @@ async function run() {
       '2025-01-17 00:00:00'
     );
     await insert('s6', 'highlight', '✅ 진행 완료 | 2025년 1월 17일 (금) 18:00', '본 강연은 2025년 1월 17일 서울 마포구 서교동 국일빌딩 4층 필로버스에서 성공적으로 진행되었습니다. 참여해주신 모든 분들께 감사드립니다.', 'fa-solid fa-circle-check text-green-500', 1);
-    await insert('s6', 'quote', '예술은 말로 하기 어려운 것을 감각으로 먼저 말한다.', '변화하는 사회의 표면 아래, 숨겨진 불평등과 갈등이 드러날 때가 있다. 예술은 그동안 우리가 보지 못했던 현실을 직시하게 하고, 차별과 소외, 환경, 젠더와 인권 등 다양한 사회 문제를 감각과 감성으로 전하며 질문을 던진다.', 'fa-solid fa-quote-left text-seeSawAmber', 2);
+    await insert('s6', 'quote', '예술은 말로 하기 어려운 것을 감각으로 먼저 말한다.', '변화하는 사회의 표면 아래, 숨겨진 불평등과 갈등이 드러날 때가 있다. 예술은 그동안 우리가 보지 못했던 현실을 직시하게 하고, 차별과 소외, 환경, 젠더와 인권 등 다양한 사회 문제를 감각과 감성으로 전하며 질문을 던진다.', 'fa-solid fa-quote-left text-ieumAmber', 2);
     await insert('s6', 'checklist', '📌 강연 정보', '', 'fa-solid fa-location-dot text-red-400', 3, [
       '일시: 2025년 1월 17일 (금) 오후 6시',
       '장소: 서울시 마포구 서교동 449-43 국일빌딩 4층 (필로버스)',
-      '주최: SEE-SAW',
+      '주최: IEUM',
       '참가 대상: 예술과 사회에 관심 있는 누구나'
     ]);
     await insert('s6', 'steps', '💡 강연에서 다룬 주제', '', 'fa-solid fa-list-check text-blue-500', 4, [
