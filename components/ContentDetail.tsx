@@ -383,6 +383,14 @@ const ContentDetail: React.FC<ContentDetailProps> = ({
             <i className="fa-solid fa-lightbulb text-[14px]"></i>
             <span>다른 인사이트 보러가기</span>
           </button>
+        ) : item.category === Category.ESSAYS ? (
+          <button
+            onClick={() => navigate(`/category/${Category.ESSAYS}`)}
+            className="flex-1 bg-gradient-to-r from-ieumAmber to-ieumGold hover:opacity-90 text-white font-black text-base h-[54px] rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-ieumAmber/30 active:scale-[0.98] transition-all"
+          >
+            <i className="fa-solid fa-pen-nib text-[14px]"></i>
+            <span>다른 에세이/칼럼 보러가기</span>
+          </button>
         ) : item.deadline === '진행완료' ? (
           <button
             disabled
